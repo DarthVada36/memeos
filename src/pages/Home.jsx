@@ -1,9 +1,33 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+
+
 
 const Home = () => {
+  let [list, setList] = useState([])
+  let getAxios = async () => {
+    await axios.get("http://localhost:3000/memes").then((value) => setList(value.data))
+  }
+
+  useEffect(() => {
+    getAxios()
+  })
+
   return (
     <div>
-      <h1 className='text-3xl'>Mi vida es un meme</h1>
+      {
+list.map((item)=> {
+  return <li key={item.id} className='w-full rounded-2xl border'>
+    <div className="container w-[80%] min-h-14 flex flex-col justify-center items-center">
+    <h1>{item.name}</h1>
+    <p>{item.description}</p>
+    <p>{item.year}</p>
+    <p>{item.author}</p>
+
+    </div>
+  </li>
+})
+      }
     </div>
   )
 }
