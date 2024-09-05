@@ -1,33 +1,14 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-
-
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
-  let [list, setList] = useState([])
-  let getAxios = async () => {
-    await axios.get("http://localhost:3000/memes").then((value) => setList(value.data))
-  }
-
-  useEffect(() => {
-    getAxios()
-  })
 
   return (
-    <div>
-      {
-list.map((item)=> {
-  return <li key={item.id} className='w-full rounded-2xl border'>
-    <div className="container w-[80%] min-h-14 flex flex-col justify-center items-center">
-    <h1>{item.name}</h1>
-    <p>{item.description}</p>
-    <p>{item.year}</p>
-    <p>{item.author}</p>
-
-    </div>
-  </li>
-})
-      }
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold mb-4">Mi vida es un meme</h1>
+      <Link to='/gallery'>
+        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Ir a la Exposición</button>
+      </Link>
     </div>
   )
 }
