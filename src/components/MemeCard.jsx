@@ -1,15 +1,14 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-const MemeCard = ({ meme }) => {
-  return (
-    <div className="border rounded-lg overflow-hidden shadow-lg">
-        <img src={meme.image} alt={meme.title} className="w-full h-48 object-cover"/>
-        <div className='p-4'>
-            <h2 className="text-xl font-bold">{meme.title}</h2>
-            <Link to={`/meme/${meme.id}`}><button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Detalles</button></Link>
-        </div>
+const MemeCard = ({ meme }) => (
+  <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <img className="w-full" src={meme.image} alt={meme.title} />
+    <div className="px-6 py-4">
+      <div className="font-bold text-xl mb-2">{meme.title}</div>
+      <p className="text-gray-700 text-base">{meme.description}</p>
     </div>
-  )
-}
+  </div>
+);
 
-export default MemeCard
+
+export default MemeCard;

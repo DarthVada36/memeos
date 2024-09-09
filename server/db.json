@@ -1,1 +1,16 @@
-{}
+{
+    "memes": [
+        {
+            "id": 1,
+            "title": "Test Meme",
+            "description": "Meme de prueba.",
+            "image": "https://www.recreoviral.com/wp-content/uploads/2015/12/Memes-renacentistas-9.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Test Meme2",
+            "description": "Meme de prueba2.",
+            "image": "https://www.recreoviral.com/wp-content/uploads/2015/12/Memes-renacentistas-9.jpg"
+        }
+    ]
+}
