@@ -22,7 +22,8 @@ export const router = createBrowserRouter([{
             },
             {
                 path: '/gallery/meme/:id',
-                element: <MemeDetail/>
+                element: <MemeDetail/>,
+                loader: getData
             },
             {
                 path: '/gallery/newmeme',

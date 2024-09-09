@@ -2,15 +2,27 @@
     "memes": [
         {
             "id": 1,
-            "title": "Test Meme",
-            "description": "Meme de prueba.",
-            "image": "https://www.recreoviral.com/wp-content/uploads/2015/12/Memes-renacentistas-9.jpg"
+            "name": "Doge",
+            "year": 2013,
+            "description": "El meme Doge muestra una imagen de un perro Shiba Inu acompañado de frases escritas en inglés roto.",
+            "image": "https://example.com/doge.jpg",
+            "author": "Atsuko Sato"
         },
         {
             "id": 2,
-            "title": "Test Meme2",
-            "description": "Meme de prueba2.",
-            "image": "https://www.recreoviral.com/wp-content/uploads/2015/12/Memes-renacentistas-9.jpg"
+            "name": "Distracted Boyfriend",
+            "year": 2017,
+            "description": "Una imagen popular de un hombre volteando a ver a otra mujer mientras su novia lo mira con desaprobación.",
+            "image": "https://example.com/distracted-boyfriend.jpg",
+            "author": "Antonio Guillem"
+        },
+        {
+            "id": 3,
+            "name": "Success Kid",
+            "year": 2007,
+            "description": "Una foto de un bebé con expresión de victoria, utilizado para representar pequeños éxitos o logros.",
+            "image": "https://example.com/success-kid.jpg",
+            "author": "Laney Griner"
         }
     ]
 }
