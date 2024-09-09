@@ -27,7 +27,6 @@ export const deleteMeme = async (id) => {
 };
 
 
-//Importamos todo aqui para completar el CRUD.
 
 
 
