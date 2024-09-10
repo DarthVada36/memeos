@@ -1,23 +1,22 @@
-/** @type {import('tailwindcss').Config} */
+/ @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src//*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+    extend: {},
     colors: {
-      'darkGray': '#272525',
-      'midGray': '#4D4C47',
+      'primary': '#272525',
+      'secondary': '#4D4C47',
       'bronze': '#9C7E41',
-      'lightGray': '#D3C9BE',
-      'white': '#EDE7E1',
-      },
-      fontFamily: {
-        sans: ['Raleway', 'sans-serif'],
-        serif: ['Libre Bodoni', 'serif'],
-      },
-  plugins: [],
+      'gray': '#D3C9BE',
+      'milk': '#EDE7E1'
     },
+    fontFamily: {
+      'raleway': ["Raleway", 'sans-serif'],
+      'bodoni': ["Libre Bodoni", 'serif'],
+    }
   },
+  plugins: [],
 }
