@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div>
       <h1 className='text-3xl text-bronze font-bodoni'>Mi vida es un meme</h1>
+      <button>Abrir Galería</button>
     </div>
   );
 }

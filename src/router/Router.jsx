@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import CreateMeme from "../pages/CreateMeme";
 import EditMeme from "../pages/EditMeme";
+import Gallery from "../pages/Gallery";
 
 export const router = createBrowserRouter([{
     path: '/',
@@ -19,7 +20,11 @@ export const router = createBrowserRouter([{
         {
             path: 'editmeme',
             element: <EditMeme/>
-        }
+        },
+        {
+            path: 'gallery',
+            element: <Gallery/>
+        },
     ]
 }])
 
