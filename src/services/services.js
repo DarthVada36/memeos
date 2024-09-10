@@ -15,6 +15,18 @@ export const getData = async () => {
   }
 };
 
+export const deleteMeme = async (id) => {
+  try {
+    const response = await axios.delete(`${baseURL}/${id}`);
+    console.log('Objeto eliminado:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Error al hacer la petición DELETE:', error);
+    throw error;
+  } finally {
+    console.log('Petición DELETE completada');
+  }
+};
 
 export const postData = async (data) => {
   try {

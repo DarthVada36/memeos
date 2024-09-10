@@ -3,8 +3,8 @@ import React from 'react'
 const DetailsBtn = () => {
   return (
     <div>
-        <button className="h-[34px] px-3 py-2 bg-[#4d4c47] rounded-[100px] justify-center items-end gap-2.5 inline-flex">
-            <p className="text-[#ede7e1] text-sm font-normal font-['Libre Bodoni']">Detalles</p>
+        <button className="h-[34px] w-24 px-3 py-2 bg-secondary rounded-[100px] justify-center items-end gap-2.5 inline-flex">
+            <p className="text-milk text-sm font-normal font-[bodoni]">Detalles</p>
         </button>
     </div>
   )

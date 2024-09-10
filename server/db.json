@@ -1,8 +1,8 @@
 {
     "memes": [
         {
-            "id": 1,
-            "year": 2020,
+            "id": "1",
+            "year": "2020",
             "author": "Pepito Fuentes",
             "current": "Renacimiento",
             "name": "Como cuando te enteras que hay vida después de la muerte",
@@ -10,8 +10,8 @@
             "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__"    
         },
         {
-            "id": 2,
-            "year": 2017,
+            "id": "2",
+            "year": "2017",
             "author": "Antonio Guillem",
             "current": "Renacimiento",
             "name": "Como cuando te enteras que hay vida después de la muerte",
@@ -20,8 +20,8 @@
             
         },
         {
-            "id": 3,
-            "year": 2007,
+            "id": "3",
+            "year": "2007",
             "author": "Laney Griner",
             "current": "Renacimiento",
             "name": "Como cuando te enteras que hay vida después de la muerte",

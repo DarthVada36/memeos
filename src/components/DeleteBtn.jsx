@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const DeleteBtn = () => {
+const DeleteBtn = ({ onDelete }) => {
   return (
     <div>
-        <button className="h-[34px] px-3 py-2 bg-[#4d4c47] rounded-[100px] justify-center items-end gap-2.5 inline-flex">
-            <p className="text-[#ede7e1] text-sm font-normal font-['Libre Bodoni']">Eliminar</p>
-        </button>
+      <button className="h-[34px] w-24 px-3 py-2 bg-secondary rounded-[100px] justify-center items-end gap-2.5 inline-flex" onClick={onDelete}>
+        <p className="text-milk text-sm font-normal font-[bodoni]">Eliminar</p>
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default DeleteBtn
+export default DeleteBtn;
