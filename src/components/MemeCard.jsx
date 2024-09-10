@@ -9,11 +9,6 @@ const MemeCard = ({ meme }) => (
             <div className="w-64 h-[45px] text-center text-[#4d4c47] text-lg font-medium font-['Libre Bodoni']">{meme.name}</div>
         </div>
         <div className="h-[34px] justify-center items-center gap-[17px] inline-flex">
-          <Link to={`/gallery/editmeme/${meme.id}`} className="text-blue-500 hover:underline">
-            <button className="h-[34px] px-3 py-2 bg-[#ede7e1] rounded-[100px] border border-[#9c7e41] justify-center items-end gap-2.5 inline-flex">
-              <p className="text-[#4d4c47] text-sm font-normal font-['Libre Bodoni']">Editar</p>
-            </button>
-          </Link>
           <Link to={`/gallery/meme/${meme.id}`} className="text-blue-500 hover:underline">
             <button className="h-[34px] px-3 py-2 bg-[#4d4c47] rounded-[100px] justify-center items-end gap-2.5 inline-flex">
               <p className="text-[#ede7e1] text-sm font-normal font-['Libre Bodoni']">Detalles</p>

@@ -9,32 +9,32 @@ import { getData } from "../services/services";
 
 export const router = createBrowserRouter([{
     path: '/',
-    element: <Home/>
+    element: <Home />
 },
-    {
-        path: 'gallery',
-        element: <Layout/>,
-        children: [
-            {
-                index: true, 
-                element: <Gallery/>,
-                loader: getData
-            },
-            {
-                path: '/gallery/meme/:id',
-                element: <MemeDetail/>,
-                loader: getData
-            },
-            {
-                path: '/gallery/newmeme',
-                element: <CreateMeme/>
-            },
-            {
-                path: '/gallery/editmeme/:id',
-                element: <EditMeme/>
-            }
-        ]
-    }
+{
+    path: 'gallery',
+    element: <Layout />,
+    children: [
+        {
+            index: true, 
+            element: <Gallery />,
+            loader: getData
+        },
+        {
+            path: '/gallery/meme/:id',
+            element: <MemeDetail />,
+            loader: getData  
+        },
+        {
+            path: '/gallery/newmeme',
+            element: <CreateMeme />
+        },
+        {
+            path: '/gallery/editmeme/:id',
+            element: <EditMeme />
+        }
+    ]
+}
 ])
 
 // export default router

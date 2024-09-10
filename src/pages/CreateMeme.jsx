@@ -1,12 +1,18 @@
 import React from 'react'
-
-
+import { useForm } from 'react-hook-form'
 
 const CreateMeme = () => {
+
+  const { register, handleSubmit } = useForm()
+  const onSubmit = (data) => console.log(data)
+
   return (
-    <div>
-      <h1 className='text-2xl'>Haz un meme</h1>
-    </div>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName", { required: true, maxLength: 20 })} />
+      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
+      <input type="number" {...register("age", { min: 18, max: 99 })} />
+      <button type="submit">Añadir</button>
+    </form>
   )
 }
 

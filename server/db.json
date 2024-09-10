@@ -2,27 +2,31 @@
     "memes": [
         {
             "id": 1,
-            "name": "Doge",
-            "year": 2013,
-            "description": "El meme Doge muestra una imagen de un perro Shiba Inu acompañado de frases escritas en inglés roto.",
-            "image": "https://example.com/doge.jpg",
-            "author": "Atsuko Sato"
+            "year": 2020,
+            "author": "Pepito Fuentes",
+            "current": "Renacimiento",
+            "name": "Como cuando te enteras que hay vida después de la muerte",
+            "description": "Inspirada en la pintura titulada: Hombre desconocido, se presenta la figura de un hombre que refleja una mezcla profunda de desconcierto y decepción. La obra capta el momento exacto en que este individuo, tras haber experimentado la muerte, se enfrenta a la inesperada revelación de que la vida continúa más allá del fin terrenal. El hombre, que quizás esperaba encontrar paz o vacío, se ve abrumado por la complejidad de esta nueva realidad. Sus expresiones transmiten no solo asombro, sino también una sensación de desilusión, como si lo que imaginaba que vendría después no correspondiera en absoluto con lo que ha encontrado.",
+            "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__"    
         },
         {
             "id": 2,
-            "name": "Distracted Boyfriend",
             "year": 2017,
+            "author": "Antonio Guillem",
+            "current": "Renacimiento",
+            "name": "Como cuando te enteras que hay vida después de la muerte",
             "description": "Una imagen popular de un hombre volteando a ver a otra mujer mientras su novia lo mira con desaprobación.",
-            "image": "https://example.com/distracted-boyfriend.jpg",
-            "author": "Antonio Guillem"
+            "image": "https://example.com/distracted-boyfriend.jpg"
+            
         },
         {
             "id": 3,
-            "name": "Success Kid",
             "year": 2007,
+            "author": "Laney Griner",
+            "current": "Renacimiento",
+            "name": "Como cuando te enteras que hay vida después de la muerte",
             "description": "Una foto de un bebé con expresión de victoria, utilizado para representar pequeños éxitos o logros.",
-            "image": "https://example.com/success-kid.jpg",
-            "author": "Laney Griner"
+            "image": "https://example.com/success-kid.jpg"            
         }
     ]
 }
