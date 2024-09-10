@@ -1,4 +1,4 @@
-//Test components - añadir nav y footer
+//Test components -añadir  nav y footer
 import React from 'react'
 
 const NavBar = () => {
