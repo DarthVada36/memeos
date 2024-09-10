@@ -4,8 +4,7 @@ import Home from "../pages/Home";
 import Gallery from "../pages/Gallery";
 import MemeDetail from "../pages/MemeDetail";
 import CreateMeme from "../pages/CreateMeme";
-import EditMeme from "../pages/EditMeme";
-import Gallery from "../pages/Gallery";
+
 
 export const router = createBrowserRouter([{
     path: '/',
