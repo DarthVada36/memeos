@@ -1,28 +1,44 @@
 {
-    "memes": [
-        {
-            "id": 1,
-            "name": "Doge",
-            "year": 2013,
-            "description": "El meme Doge muestra una imagen de un perro Shiba Inu acompañado de frases escritas en inglés roto.",
-            "image": "https://example.com/doge.jpg",
-            "author": "Atsuko Sato"
-        },
-        {
-            "id": 2,
-            "name": "Distracted Boyfriend",
-            "year": 2017,
-            "description": "Una imagen popular de un hombre volteando a ver a otra mujer mientras su novia lo mira con desaprobación.",
-            "image": "https://example.com/distracted-boyfriend.jpg",
-            "author": "Antonio Guillem"
-        },
-        {
-            "id": 3,
-            "name": "Success Kid",
-            "year": 2007,
-            "description": "Una foto de un bebé con expresión de victoria, utilizado para representar pequeños éxitos o logros.",
-            "image": "https://example.com/success-kid.jpg",
-            "author": "Laney Griner"
-        }
-    ]
+  "memes": [
+    {
+      "id": "1",
+      "name": "Doge",
+      "year": 2013,
+      "description": "El meme Doge muestra una imagen de un perro Shiba Inu acompañado de frases escritas en inglés roto.",
+      "image": "https://example.com/doge.jpg",
+      "author": "Atsuko Sato"
+    },
+    {
+      "id": "2",
+      "name": "Distracted Boyfriend",
+      "year": 2017,
+      "description": "Una imagen popular de un hombre volteando a ver a otra mujer mientras su novia lo mira con desaprobación.",
+      "image": "https://example.com/distracted-boyfriend.jpg",
+      "author": "Antonio Guillem"
+    },
+    {
+      "id": "3",
+      "name": "Success Kid",
+      "year": 2007,
+      "description": "Una foto de un bebé con expresión de victoria, utilizado para representar pequeños éxitos o logros.",
+      "image": "https://example.com/success-kid.jpg",
+      "author": "Laney Griner"
+    },
+    {
+      "id": "6278",
+      "nombre": "jkjh",
+      "fechaDeaparición": "2024-08-29",
+      "autor": "hola",
+      "corriente": "hola",
+      "descripcion": "hola"
+    },
+    {
+      "id": "f30b",
+      "nombre": "kt",
+      "fechaDeaparición": "2024-09-04",
+      "autor": "tdf",
+      "corriente": "fdf",
+      "descripcion": "dgc"
+    }
+  ]
 }

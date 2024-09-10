@@ -1,42 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import axios from "axios";
-
-
-
-
+import { createMeme } from "../services/services";
+import { useNavigate } from "react-router-dom";
 
 const CreateMeme = () => {
-  const { register, handleSubmit, formState:{errors}, reset, } = useForm({
-    
-    defaultValues: {
-      nombre: "",
-      fechaDeaparición: "",
-      autor: "",
-      corriente: "",
-      descripcion: "",
-    },
-  });
-  
-  // Función: Manejar el envío del formulario
-  const onSubmit = async(data) => {
-    console.log("Datos enviados:", data);
+  const { register, handleSubmit, formState: { errors } } = useForm()
+  const navigate = useNavigate()
 
-    try {
-      // Realizar solicitud POST usando axios
-      const response = await axios.post(' ', data); //Falta aqui url
-      console.log('Respuesta del servidor:', response.data);
-
-      //Alerta de éxito
-      alert('Formulario enviado exitosamente');
-
-    } catch (error) {
-      console.error('Error al enviar los datos:', error);
-      alert('Error al enviar el formulario'); 
-
-    }
-    reset(); //Reinicia el formulario desspués de enviar
-  };
+  const onSubmit = async (data) => {
+      try {
+          await createMeme(data)
+          navigate('/')
+      } catch (error) {
+          console.error('Error creating product:', error)
+      }
+  }
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-[80%]  bg-[#ede7e1] p-10 flex flex-col justify-center items-center">
       
