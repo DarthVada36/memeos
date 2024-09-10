@@ -14,7 +14,7 @@ const Gallery = () => {
     getAxios()
   })
 
-  return (
+  return ( 
     <div>
       {
 list.map((item)=> {
