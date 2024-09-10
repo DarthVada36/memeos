@@ -27,7 +27,7 @@ const MemeDetail = () => {
   const handleDelete = async () => {
     try {
       await deleteMeme(id);
-      navigate('/gallery'); // Redirige a la galería después de eliminar
+      navigate('/gallery');
     } catch (error) {
       console.error('Error al eliminar el meme:', error);
     }
