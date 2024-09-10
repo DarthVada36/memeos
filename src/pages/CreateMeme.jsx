@@ -12,7 +12,7 @@ const CreateMeme = () => {
           await createMeme(data)
           navigate('/')
       } catch (error) {
-          console.error('Error creating product:', error)
+          console.error('Error creating meme:', error)
       }
   }
   return (
@@ -75,6 +75,9 @@ const CreateMeme = () => {
         })}
       />
       {errors.descripcion && <span>{errors.descripcion.message}</span>}
+
+      {/* Añadir archivo  */}
+      
 
       </div>
 
