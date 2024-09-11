@@ -5,5 +5,8 @@
 @tailwind utilities;
 
 body {
-    @apply bg-primary;
+    @apply min-h-screen bg-primary text-milk;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar el scroll horizontal */
     }

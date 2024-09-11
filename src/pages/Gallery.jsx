@@ -13,20 +13,26 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="w-[1440px] h-[1613px] relative bg-primary">
-      <div className="w-[194px] h-[45px] text-center text-[#9c7e41] text-4xl font-bodoni leading-[44.99px]">
-        Galería
-      </div>
+    <div className="w-full min-h-screen flex flex-col items-center bg-primary">
+      {/* Contenedor máximo limitado al tamaño de la pantalla */}
+      <div className="max-w-[1440px] w-full flex flex-col items-center">
+        {/* Título de la Galería */}
+        <div className="w-[194px] h-[45px] text-center text-[#9c7e41] text-4xl font-bodoni leading-[44.99px] my-6">
+          Galería
+        </div>
       
-      <div>searchbar</div>
+      {/* Barra de búsqueda */}
+      <div className="mb-6">searchbar</div>
 
-      <div className="flex flex-wrap gap-4">
-        {memes.map((meme) => (
-          <Card key={meme.id} imageSrc={meme.imageSrc} title={meme.title} />
-        ))}
+        {/* Contenedor de las Cartas centrado */}
+        <div className="flex flex-wrap justify-center gap-4 w-full">
+          {memes.map((meme) => (
+            <Card key={meme.id} imageSrc={meme.imageSrc} title={meme.title} />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Gallery;
