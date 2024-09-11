@@ -63,6 +63,14 @@
       "autor": "prueba",
       "corriente": "moderna",
       "descripcion": "prueba2"
+    },
+    {
+      "id": "3cc5",
+      "nombre": "memeprueba3",
+      "fechaDeaparición": "2024-09-02",
+      "autor": "prueba3",
+      "corriente": "moderna",
+      "descripcion": "prueba3"
     }
   ]
 }

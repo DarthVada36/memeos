@@ -4,11 +4,7 @@ import { createMeme } from "../services/services";
 import { useNavigate } from "react-router-dom";
 
 const CreateMeme = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
@@ -23,7 +19,7 @@ const CreateMeme = () => {
     
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-[80%] mx-auto bg-[#ede7e1] p-10 flex flex-col justify-center items-center rounded-[10px]"
+      className="w-[80%] mx-auto bg-[#ede7e1] p-10 flex flex-col justify-center items-center rounded-[10px]" 
     >
       <h1 className="text-center w-full text-[#4d4c47] text-[28px] sm:text-[36px] md:text-[44px] font-bold font-['Libre Bodoni'] mt-6 mb-12">
         Añadir Meme
@@ -88,16 +84,17 @@ const CreateMeme = () => {
 
         {/* Añadir archivo  */}
         <div className="w-[702.24px] h-[47px] p-2.5 rounded-[10px] justify-start items-center gap-[17px] inline-flex">
+          
           <img
             className="w-[27px] h-[27px]"
             src="src/img/agregar-archivo.png"
           />
           <div className="w-[111px] text-[#aaaaa7] text-[15px] font-medium font-['Raleway']">
-            Añadir archivo
+          <input className="" placeholder="añadir archivo" type="file" />
           </div>
         </div>
       </div>
-
+      
       <button
         type="submit"
         className=" w-full mt-6 p-2.5 left-[47.88px] top-[619px]  bg-[#272525] rounded-[20px] justify-center items-center gap-2.5 inline-flex"
