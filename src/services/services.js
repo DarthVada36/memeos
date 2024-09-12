@@ -40,3 +40,16 @@ export const postData = async (data) => {
     console.log('Petición POST completada');
   }
 };
+
+export const editMeme = async (id, data) => {
+  try {
+    const response = await axios.put(`${baseURL}/${id}`, data);
+    console.log('Objeto actualizado:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Error al hacer la petición PUT', error);
+    throw error;
+  } finally {
+    console.log('Petición PUT completada')
+  }
+};

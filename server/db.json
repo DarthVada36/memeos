@@ -1,32 +1,31 @@
 {
-    "memes": [
-        {
-            "id": "1",
-            "year": "2020",
-            "author": "Pepito Fuentes",
-            "current": "Renacimiento",
-            "name": "Como cuando te enteras que hay vida después de la muerte",
-            "description": "Inspirada en la pintura titulada: Hombre desconocido, se presenta la figura de un hombre que refleja una mezcla profunda de desconcierto y decepción. La obra capta el momento exacto en que este individuo, tras haber experimentado la muerte, se enfrenta a la inesperada revelación de que la vida continúa más allá del fin terrenal. El hombre, que quizás esperaba encontrar paz o vacío, se ve abrumado por la complejidad de esta nueva realidad. Sus expresiones transmiten no solo asombro, sino también una sensación de desilusión, como si lo que imaginaba que vendría después no correspondiera en absoluto con lo que ha encontrado.",
-            "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__"    
-        },
-        {
-            "id": "2",
-            "year": "2017",
-            "author": "Antonio Guillem",
-            "current": "Renacimiento",
-            "name": "Como cuando te enteras que hay vida después de la muerte",
-            "description": "Una imagen popular de un hombre volteando a ver a otra mujer mientras su novia lo mira con desaprobación.",
-            "image": "https://example.com/distracted-boyfriend.jpg"
-            
-        },
-        {
-            "id": "3",
-            "year": "2007",
-            "author": "Laney Griner",
-            "current": "Renacimiento",
-            "name": "Como cuando te enteras que hay vida después de la muerte",
-            "description": "Una foto de un bebé con expresión de victoria, utilizado para representar pequeños éxitos o logros.",
-            "image": "https://example.com/success-kid.jpg"            
-        }
-    ]
+  "memes": [
+    {
+      "id": "1",
+      "year": "2020",
+      "author": "Pepito Fuentes",
+      "current": "Renacimiento",
+      "name": "Como cuando te enteras que hay vida después de la muerte",
+      "description": "Inspirada en la pintura titulada: Hombre desconocido, se presenta la figura de un hombre que refleja una mezcla profunda de desconcierto y decepción. La obra capta el momento exacto en que este individuo, tras haber experimentado la muerte, se enfrenta a la inesperada revelación de que la vida continúa más allá del fin terrenal. El hombre, que quizás esperaba encontrar paz o vacío, se ve abrumado por la complejidad de esta nueva realidad. Sus expresiones transmiten no solo asombro, sino también una sensación de desilusión, como si lo que imaginaba que vendría después no correspondiera en absoluto con lo que ha encontrado.",
+      "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__"
+    },
+    {
+      "id": "2",
+      "year": "2017",
+      "author": "Anónimo",
+      "current": "Renacimiento",
+      "name": "Cuando ves lo que publicabas antes en Facebook",
+      "description": "El cuadro es 'La carta de amor' de Jean-Baptiste Greuze, un pintor francés del siglo XVIII. Se ha añadido el texto 'Cuando lees tus publicaciones de 2009 en Facebook', jugando con la expresión de sorpresa de la mujer y dándole un contexto humorístico relacionado con la revisión de antiguas publicaciones en redes sociales.",
+      "image": "https://s3-alpha-sig.figma.com/img/47c1/69f0/97c8e0968c14856a4ed82276a88b3c09?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lwLg-NVU0Il~dRTzf~iNlbgS0adGIX2~1D~KbuvjC9lX~YqX6wat~tjqtx9esWvsM-ESv4NyPDVm7H76k6g4Zz1WxTcKmf0APQNGLF2RyGD9XM9a2DwRts6ROst8T1QiCtU9VRuCw~N2jglGzxjXJ2PIZHVCpUrwP14segXIXQPn5e67nUfhqlfGOKePsGAJOklmxHCadSyxBWyBsWYs-48AlbNENQD--~tWrflgHlhAxMV6H-H8MsCvJGVPGAt8ccKN~sFaDo-XrRdDMPTRJmlVPW231ECEgVjiGoF1wvwj5RbaerQY9wHKNrBVWXOmT4xIDf95BD6CTa8AlVPkNQ__"
+    },
+    {
+      "id": "3",
+      "year": "2007",
+      "author": "Laney Griner",
+      "current": "Renacimiento",
+      "name": "“Te dije que descongelaras el pollo”",
+      "description": "es el famoso cuadro 'Judith decapitando a Holofernes', pintado por Artemisia Gentileschi alrededor de 1620.",
+      "image": "https://s3-alpha-sig.figma.com/img/1cb8/97c5/de717d4d6aebab9b5f1f67cea8bb9b9d?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xae~Abw~RjOrAxOOC0VsK2wxfxIQxscVuOVy5vB1vJZx96Ybn4Wf5S6MAI1YvfxQrSEgjgpjg~zjjf9nzhCm5pDzeAHFFAlr57mX4YYOknYlJkkYrU2-XJ9uqiPt96tHGc4akj5c8lAd6GBJqCByoXjAgbzu2-f5bs-K7NZzNvlc5j-uyBN95FRo7sJQ17df~gk5qfAqZ8SCXX5DdDuUVmrw16TNrMQ8PUFt1vQiDFA2Sz28jgBU2lOOt3jGCbp0CSNviBR7hIN-1ry0beAb1ZlPJo-7OFo~H5RGgEJa1bdoONdT~jqTpgv4-GOCPhZ4EC-a~5wYFgLYaHU66JIG6g__"
+    }
+  ]
 }

@@ -4,6 +4,7 @@ import { getData, deleteMeme } from '../services/services';
 import { Link } from 'react-router-dom';
 import EditBtn from '../components/EditBtn';
 import DeleteBtn from '../components/DeleteBtn';
+import CloseBtn from '../components/CloseBtn';
 
 const MemeDetail = () => {
   const { id } = useParams();
@@ -38,9 +39,12 @@ const MemeDetail = () => {
   }
 
   return (
-    <div className="w-[100%] h-[60em] bg-milk flex justify-center items-center gap-20 rounded-xl">
+    <div className="w-[100%] h-[60rem] bg-milk flex justify-center items-center gap-20 rounded-xl">
+      <Link to='/gallery' className="relative left-[97rem] bottom-[27rem]">
+        <CloseBtn />
+      </Link>
       <div>
-        <img className="w-[45em] h-[40em] border border-bronze" src={meme.image} alt={meme.name} />
+        <img className="w-[45rem] h-[40rem] border border-bronze" src={meme.image} alt={meme.name} />
       </div>
       <div className="flex flex-col gap-6">
         <div>
@@ -48,12 +52,12 @@ const MemeDetail = () => {
           <p className="font-[raleway] font-semibold"><strong>Autor:</strong> {meme.author}</p>
           <p className="font-[raleway] font-semibold"><strong>Corriente:</strong> {meme.current}</p>
         </div>
-        <div className="w-[20em] text-primary text-[1.5em] font-bold font-[bodoni] uppercase">
+        <div className="w-[20rem] text-primary text-[1.5rem] font-bold font-[bodoni] uppercase">
           <h2>{meme.name}</h2>
         </div>  
         <div>
-          <p className="w-[38em] text-[#191919] text-lg font-light font-[raleway] leading-7"><strong>Descripción:</strong></p>
-          <p className="w-[618px] text-[#191919] text-lg font-light font-[raleway] leading-7">{meme.description}</p>
+          <p className="w-[38rem] text-[#191919] text-lg font-light font-[raleway] leading-7"><strong>Descripción:</strong></p>
+          <p className="w-[38rem] text-[#191919] text-lg font-light font-[raleway] leading-7">{meme.description}</p>
         </div>
         <div className="flex gap-4 mt-2 justify-center">
           <Link to={`/gallery/editmeme/${meme.id}`} className="text-blue-500 hover:underline">
