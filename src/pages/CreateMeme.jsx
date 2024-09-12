@@ -44,13 +44,13 @@ const CreateMeme = () => {
     {/* Botón de cerrar */}
     <button 
         onClick={handleClose} 
-        className="absolute top-4 right-4 text-[24px] text-black"
+        className="absolute top-8 right-10 text-[24px] text-primary p-2.5 "
       >
       &times;
       </button>  
 
      {/* Formulario */}
-     
+
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="w-full flex flex-col justify-center items-center"
