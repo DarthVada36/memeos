@@ -34,12 +34,26 @@ const CreateMeme = () => {
       setLoading(false);
     }
   };
+  const handleClose = () => {
+    navigate('/');  // ruta dnd nos lleva el formulario 
+  };
+
   return (
+    <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]" > 
     
-     /* Formulario */
+    {/* Botón de cerrar */}
+    <button 
+        onClick={handleClose} 
+        className="absolute top-4 right-4 text-[24px] text-black"
+      >
+      &times;
+      </button>  
+
+     {/* Formulario */}
+     
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]" 
+      className="w-full flex flex-col justify-center items-center"
     >
       <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-['Libre Bodoni'] mt-6 mb-12">
         Añadir Meme
@@ -49,7 +63,7 @@ const CreateMeme = () => {
       {error && <p className="text-red-500">{error}</p>}
       {mensaje && <p className="text-green-500">{mensaje}</p>}
 
-      <div className="container flex flex-col gap-4 bg-transparent">
+      <div className="container flex flex-col gap-4">
 
         {/* Nombre */}
         <input
@@ -140,6 +154,7 @@ const CreateMeme = () => {
         </div>
       </button>
     </form>
+    </div>
   );
 };
 
