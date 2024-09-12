@@ -26,6 +26,10 @@ export const deleteMeme = async (id) => {
   await api.delete(`/memes/${id}`);
 };
 
+export const subirImagenCloudinary = (imagen) => {
+  
+
+}
 
 
 
