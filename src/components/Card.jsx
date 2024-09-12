@@ -1,4 +1,5 @@
-import PrimaryButton from './PrimaryButton'; // Importamos el botón
+import PrimaryButton from './PrimaryButton';
+import SecondaryButton from './SecondaryButton' // Importamos el botón
 
 export default function Card({ imageSrc, title }) {
     return (
@@ -16,7 +17,7 @@ export default function Card({ imageSrc, title }) {
             </div>
             <div className="justify-center items-center gap-[17px] inline-flex">
             {/* Botón "Editar" */}
-            <PrimaryButton>Editar</PrimaryButton>
+            <SecondaryButton>Editar</SecondaryButton>
 
             <PrimaryButton>Detalles</PrimaryButton>
             </div>
