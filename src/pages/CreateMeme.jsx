@@ -35,7 +35,7 @@ const CreateMeme = () => {
     }
   };
   const handleClose = () => {
-    navigate('/');  // ruta dnd nos lleva el formulario 
+    navigate('/gallery');  // ruta dnd nos lleva el formulario 
   };
 
   return (
