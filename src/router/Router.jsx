@@ -5,7 +5,6 @@ import Gallery from "../pages/Gallery";
 import MemeDetail from "../pages/MemeDetail";
 import CreateMeme from "../pages/CreateMeme";
 import EditMeme from "../pages/EditMeme";
-import { getData } from "../services/services";
 
 export const router = createBrowserRouter([{
     path: '/',
