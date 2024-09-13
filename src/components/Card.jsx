@@ -3,11 +3,11 @@ import PrimaryButton from './PrimaryButton';
 import SecondaryButton from './SecondaryButton';
 
 export default function Card({ image, name, date, author, stream }) {
-  const [isFlipped, setIsFlipped] = useState(false); // Estado para manejar el flip
+  const [isFlipped, setIsFlipped] = useState(false); // Estado inicial en false para mostrar la parte delantera
 
   // Función para voltear la tarjeta
   const handleFlip = () => {
-    setIsFlipped(!isFlipped);
+    setIsFlipped(!isFlipped); // Alternar entre true y false para voltear la tarjeta
   };
 
   return (
@@ -27,7 +27,7 @@ export default function Card({ image, name, date, author, stream }) {
               alt={name}
             />
             <div className="h-[45px] flex-col justify-start items-start gap-[18px] flex">
-              <div className="w-64 h-[45px] text-center text-secondary text-lg font-medium font-bodoni">
+              <div className="w-64 h-[45px] text-center text-bronze text-lg font-medium font-bodoni">
                 {name}
               </div>
             </div>
@@ -42,26 +42,35 @@ export default function Card({ image, name, date, author, stream }) {
         </div>
 
         {/* Parte trasera de la tarjeta */}
-          <div className="absolute w-full h-full bg-secondary rounded-xl p-6 flex flex-col items-center justify-between backface-hidden transform rotate-y-180">
-            <div class="relative w-[273px] h-[410px] rounded-[20px] border border-bronze flex flex-col">
-                <button onClick={handleFlip} className="absolute top-2 right-2 w-[30px] h-[30px] flex items-center justify-center bg-bronze rounded-full">
-                <img className="w-[15px] h-[15px]" src="./src/img/cerrar.png" alt="cerrar" />
-                </button>
-                
-              <div className="flex-1 flex items-center justify-center text-center p-4 text-xs font-raleway text-white">
-                <div>
-                  <p>Fecha: {date}</p>
-                  <p>Autor: {author}</p>
-                  <p>Corriente: {stream}</p>
-                </div>
+        <div className="absolute w-full h-full bg-secondary rounded-xl p-6 flex flex-col items-center justify-between backface-hidden transform rotate-y-180">
+          <div className="relative w-[273px] h-[410px] rounded-[20px] border border-bronze flex flex-col">
+            {/* Botón de cierre para volver a la parte delantera */}
+            <button
+              onClick={handleFlip} // Vuelve a la tarjeta delantera
+              className="absolute top-2 right-2 w-[30px] h-[30px] flex items-center justify-center bg-bronze rounded-full"
+            >
+              <img
+                className="w-[15px] h-[15px]"
+                src="./src/img/cerrar.png"
+                alt="cerrar"
+              />
+            </button>
+            <div className="flex-1 flex items-center justify-center text-center p-4 text-xs font-raleway text-milk">
+              <div>
+                <p>{name}</p>
+                <p>Fecha: {date}</p>
+                <p>Autor: {author}</p>
+                <p>Corriente: {stream}</p>
               </div>
-              <div className="flex justify-center gap-2 mb-4">
-                <PrimaryButton>Ver más</PrimaryButton>
-                <SecondaryButton>Eliminar</SecondaryButton>
-              </div>
+            </div>
+            <div className="flex justify-center gap-2 mb-4">
+              <PrimaryButton>Ver más</PrimaryButton>
+              <SecondaryButton>Eliminar</SecondaryButton>
             </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
+
