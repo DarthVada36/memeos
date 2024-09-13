@@ -1,71 +1,58 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-
-
+import React, { useState, useEffect } from 'react';
+import Card from '../components/Card';
+import SearchBar from '../components/SearchBar'; // Importa la barra de búsqueda
 
 const Gallery = () => {
-  let [list, setList] = useState([])
-  let getAxios = async () => {
-    await axios.get("http://localhost:3000/memes").then((value) => setList(value.data))
-  }
+  const [memes, setMemes] = useState([]); // Memes originales
+  const [filteredMemes, setFilteredMemes] = useState([]); // Memes filtrados
+  const [searchQuery, setSearchQuery] = useState(''); // Estado para el texto de búsqueda
 
-  
   useEffect(() => {
-    getAxios()
-  })
+    // Fetch de los memes cambiar a axios IMPORTANTE
+    fetch('http://localhost:3000/memes')
+      .then((response) => response.json())
+      .then((data) => {
+        setMemes(data);
+        setFilteredMemes(data); // Inicialmente, los memes filtrados son todos
+      });
+  }, []);
 
-  return ( 
-    <div>
-      {
-list.map((item)=> {
-  return <li key={item.id} className='w-full rounded-2xl border'>
-    <div className="container w-[80%] min-h-14 flex flex-col justify-center items-center">
-    <h1>{item.name}</h1>
-    <p>{item.description}</p>
-    <p>{item.year}</p>
-    <p>{item.author}</p>
-
-    </div>
-  </li>
-})
-      }
-    </div>
-  )
-}
-
-export default Gallery
-
-
-/* import { useLoaderData } from "react-router-dom";
-import MemeCard from "../components/MemeCard";
-
-
-const Gallery = () => {
-
-    // const memes = useLoaderData();
-
-    // TEST
-    const memes = [
-        {
-        id: 1,
-        title: "Test Meme",
-        description: "Meme de prueba.",
-        image: "https://www.recreoviral.com/wp-content/uploads/2015/12/Memes-renacentistas-9.jpg"
-        }
-    ]
-
+    // Filtra los memes cada vez que el usuario escribe algo
+    useEffect(() => {
+      const results = memes.filter((meme) =>
+        meme.name.toLowerCase().includes(searchQuery.toLowerCase()) // Filtra por título
+      );
+      setFilteredMemes(results);
+    }, [searchQuery, memes]); // Se ejecuta cada vez que cambie la búsqueda o los memes
+  
+    // Función de filtro para el botón de settings (aquí puedes agregar lógica adicional si lo necesitas)
+    const handleFilter = () => {
+      console.log('Filtrar contenido');
+    };
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">Galeria de Memes</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {memes.map(meme => (
-            <MemeCard key={meme.id} meme={meme}/>
-        ))}
+    <div className="w-full min-h-screen flex flex-col items-center bg-primary">
+      {/* Contenedor máximo limitado al tamaño de la pantalla */}
+      <div className="max-w-[1440px] w-full flex flex-col items-center">
+        {/* Título de la Galería */}
+        <div className="w-[194px] h-[45px] text-center text-bronze text-4xl font-bodoni leading-[44.99px] my-6">
+          Galería
+        </div>
+
+        {/* Barra de búsqueda */}
+        <div className="mb-6 w-full flex justify-center">
+          <SearchBar onFilter={handleFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        </div>
+
+        {/* Contenedor de las Cartas centrado */}
+        <div className="flex flex-wrap justify-center gap-4 w-full">
+          {memes.map((meme) => (
+            <Card key={meme.id} imageSrc={meme.image} title={meme.name} />
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Gallery
- */
+export default Gallery;

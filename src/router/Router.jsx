@@ -8,29 +8,28 @@ import EditMeme from "../pages/EditMeme";
 
 export const router = createBrowserRouter([{
     path: '/',
-    element: <Layout/>,
+    element: <Home />
+},
+{
+    path: 'gallery',
+    element: <Layout />,
     children: [
         {
             index: true, 
-            element: <Home/>
+            element: <Gallery />,
         },
         {
-            path: 'gallery',
-            element: <Gallery/>
+            path: '/gallery/meme/:id',
+            element: <MemeDetail />,
         },
         {
-            path: 'meme/:id',
-            element: <MemeDetail/>
+            path: '/gallery/newmeme',
+            element: <CreateMeme />
         },
         {
-            path: 'newmeme',
-            element: <CreateMeme/>
-        },
-        {
-            path: 'editmeme/:id',
-            element: <EditMeme/>
+            path: '/gallery/editmeme/:id',
+            element: <EditMeme />
         }
     ]
-}])
-
-// export default router
+}
+])
