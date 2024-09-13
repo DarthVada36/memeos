@@ -44,7 +44,7 @@ const CreateMeme = () => {
     {/* Botón de cerrar */}
     <button 
         onClick={handleClose} 
-        className="absolute top-8 right-10 text-[24px] text-primary p-2.5 "
+        className="absolute top-8 right-10 text-[24px] text-primary"
       >
       &times;
       </button>  
