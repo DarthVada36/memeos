@@ -57,7 +57,7 @@ const Gallery = () => {
             <Card
               key={meme.id}
               image={meme.image}
-              title={meme.name}
+              name={meme.name}
               date={meme.date}
               author={meme.author}
               stream={meme.stream}
