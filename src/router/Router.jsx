@@ -1,6 +1,8 @@
 import { Router, createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
+import Gallery from "../pages/Gallery";
+import MemeDetail from "../pages/MemeDetail";
 import CreateMeme from "../pages/CreateMeme";
 import EditMeme from "../pages/EditMeme";
 import Gallery from "../pages/Gallery";
@@ -14,11 +16,19 @@ export const router = createBrowserRouter([{
             element: <Home/>
         },
         {
+            path: 'gallery',
+            element: <Gallery/>
+        },
+        {
+            path: 'meme/:id',
+            element: <MemeDetail/>
+        },
+        {
             path: 'newmeme',
             element: <CreateMeme/>
         },
         {
-            path: 'editmeme',
+            path: 'editmeme/:id',
             element: <EditMeme/>
         },
         {

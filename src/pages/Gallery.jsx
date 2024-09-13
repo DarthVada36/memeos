@@ -8,7 +8,7 @@ const Gallery = () => {
   const [searchQuery, setSearchQuery] = useState(''); // Estado para el texto de búsqueda
 
   useEffect(() => {
-    // Fetch de los memes
+    // Fetch de los memes cambiar a axios IMPORTANTE
     fetch('http://localhost:3000/memes')
       .then((response) => response.json())
       .then((data) => {
