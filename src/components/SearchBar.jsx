@@ -10,7 +10,7 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
     };
 
     return (
-        <div className="w-[493px] h-[60px] px-2 bg-[#ede7e1] rounded-[32px] shadow border justify-start items-center gap-1.5 inline-flex">
+        <div className="w-[493px] h-[60px] px-2 bg-milk rounded-[32px] shadow border justify-start items-center gap-1.5 inline-flex">
             
             {/* Botón de filtro con ícono de settings */}
             <button onClick={onFilter} className="p-2.5 justify-start items-center gap-2.5 flex">
@@ -31,7 +31,7 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
             {/* Botón de añadir meme con ícono de "plus" */}
             <button
                 onClick={handleAddMeme}
-                className="w-[51px] h-[51px] relative flex items-center justify-center bg-[#9c7e41] rounded-full"
+                className="w-[51px] h-[51px] relative flex items-center justify-center bg-bronze rounded-full"
             >
                 <img className="w-[25.50px] h-[25.50px]" src="./src/img/plus.png" alt="Add meme" />
             </button>

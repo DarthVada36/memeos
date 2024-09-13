@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
-import SearchBar from '../components/SearchBar'; // Importa la barra de búsqueda
+import SearchBar from '../components/SearchBar';
+import { getMemes } from '../services/services';
 
 const Gallery = () => {
   const [memes, setMemes] = useState([]); // Memes originales
@@ -8,13 +9,19 @@ const Gallery = () => {
   const [searchQuery, setSearchQuery] = useState(''); // Estado para el texto de búsqueda
 
   useEffect(() => {
-    // Fetch de los memes cambiar a axios IMPORTANTE
-    fetch('http://localhost:3000/memes')
-      .then((response) => response.json())
-      .then((data) => {
+
+    // Fetch de los memes usando getMemes
+    const fetchMemes = async () => {
+      try {
+        const data = await getMemes();
         setMemes(data);
         setFilteredMemes(data); // Inicialmente, los memes filtrados son todos
-      });
+      } catch (error) {
+        console.error("Error fetching memes:", error);
+      }
+    };
+
+    fetchMemes();
   }, []);
 
     // Filtra los memes cada vez que el usuario escribe algo
@@ -46,8 +53,15 @@ const Gallery = () => {
 
         {/* Contenedor de las Cartas centrado */}
         <div className="flex flex-wrap justify-center gap-4 w-full">
-          {memes.map((meme) => (
-            <Card key={meme.id} imageSrc={meme.image} title={meme.name} />
+          {filteredMemes.map((meme) => (
+            <Card
+              key={meme.id}
+              image={meme.image}
+              title={meme.name}
+              date={meme.date}
+              author={meme.author}
+              stream={meme.stream}
+            />
           ))}
         </div>
       </div>
