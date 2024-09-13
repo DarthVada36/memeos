@@ -17,11 +17,6 @@ export const createMeme = async (meme) => {
   return response.data;
 };
 
-export const updateMeme = async (id, meme) => {
-  const response = await api.put(`/memes/${id}`, meme);
-  return response.data;
-};
-
 export const deleteMeme = async (id) => {
   await api.delete(`/memes/${id}`);
 };
@@ -30,7 +25,14 @@ export const subirImagenCloudinary = (imagen) => {
   
 
 }
+export const getMemeById = async (id) => {
+  // Código
+};
 
+export const updateMeme = async (id, meme) => {
+  const response = await api.put(`/memes/${id}`, meme);
+  return response.data;
+};
 
 
 
