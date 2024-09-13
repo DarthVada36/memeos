@@ -20,7 +20,7 @@ const Gallery = () => {
     // Filtra los memes cada vez que el usuario escribe algo
     useEffect(() => {
       const results = memes.filter((meme) =>
-        meme.title.toLowerCase().includes(searchQuery.toLowerCase()) // Filtra por título
+        meme.name.toLowerCase().includes(searchQuery.toLowerCase()) // Filtra por título
       );
       setFilteredMemes(results);
     }, [searchQuery, memes]); // Se ejecuta cada vez que cambie la búsqueda o los memes
@@ -35,7 +35,7 @@ const Gallery = () => {
       {/* Contenedor máximo limitado al tamaño de la pantalla */}
       <div className="max-w-[1440px] w-full flex flex-col items-center">
         {/* Título de la Galería */}
-        <div className="w-[194px] h-[45px] text-center text-[#9c7e41] text-4xl font-bodoni leading-[44.99px] my-6">
+        <div className="w-[194px] h-[45px] text-center text-bronze text-4xl font-bodoni leading-[44.99px] my-6">
           Galería
         </div>
 
@@ -47,7 +47,7 @@ const Gallery = () => {
         {/* Contenedor de las Cartas centrado */}
         <div className="flex flex-wrap justify-center gap-4 w-full">
           {memes.map((meme) => (
-            <Card key={meme.id} imageSrc={meme.imageSrc} title={meme.title} />
+            <Card key={meme.id} imageSrc={meme.image} title={meme.name} />
           ))}
         </div>
       </div>
