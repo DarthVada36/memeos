@@ -4,7 +4,7 @@ import { getMemeById } from "../services/services";
 import { deleteMeme } from "../services/services";
 import { useNavigate } from "react-router-dom";
 
-const Single = () => {
+const MemeDetail = () => {
   const navigate = useNavigate();
 
   const [meme, setMeme] = useState(null);
@@ -91,4 +91,4 @@ const Single = () => {
   );
 };
 
-export default Single;
+export default MemeDetail;
