@@ -11,3 +11,27 @@ body {
     padding: 0;
     overflow-x: hidden; /* Evitar el scroll horizontal */
     }
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+
+.transition-transform {
+    transition: transform 0.7s;
+  }

@@ -2,24 +2,21 @@ import { useState } from 'react';
 import PrimaryButton from './PrimaryButton';
 import SecondaryButton from './SecondaryButton';
 
-export default function Card({ image, name, date, author, stream }) {
-  const [isFlipped, setIsFlipped] = useState(false); // Estado inicial en false para mostrar la parte delantera
+export default function Card({ image, name, date, autor, stream }) {
+  const [isFlipped, setIsFlipped] = useState(false);
 
-  // Función para voltear la tarjeta
   const handleFlip = () => {
-    setIsFlipped(!isFlipped); // Alternar entre true y false para voltear la tarjeta
+    setIsFlipped(!isFlipped);
   };
 
   return (
     <div className="relative w-[300px] h-[420px] perspective-1000">
-      {/* Contenedor que se voltea */}
+      {/* Contenedor que maneja el flip */}
       <div
-        className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
-          isFlipped ? 'rotate-y-180' : ''
-        }`}
+        className={`relative w-full h-full transform-style-3d transition-transform ${isFlipped ? 'rotate-y-180' : ''}`}
       >
         {/* Parte delantera de la tarjeta */}
-        <div className="absolute w-full h-full bg-milk rounded-xl p-6 flex flex-col items-center justify-between backface-hidden transform rotate-y-0">
+        <div className="absolute w-full h-full bg-milk rounded-xl p-6 flex flex-col items-center justify-between backface-hidden">
           <div className="flex-col justify-end items-center gap-9 inline-flex">
             <img
               className="w-64 h-[222px] relative rounded-xl border-4 border-bronze object-cover"
@@ -27,7 +24,7 @@ export default function Card({ image, name, date, author, stream }) {
               alt={name}
             />
             <div className="h-[45px] flex-col justify-start items-start gap-[18px] flex">
-              <div className="w-64 h-[45px] text-center text-bronze text-lg font-medium font-bodoni">
+              <div className="w-64 h-[45px] text-center text-secondary text-lg font-medium font-bodoni">
                 {name}
               </div>
             </div>
@@ -42,35 +39,21 @@ export default function Card({ image, name, date, author, stream }) {
         </div>
 
         {/* Parte trasera de la tarjeta */}
-        <div className="absolute w-full h-full bg-secondary rounded-xl p-6 flex flex-col items-center justify-between backface-hidden transform rotate-y-180">
-          <div className="relative w-[273px] h-[410px] rounded-[20px] border border-bronze flex flex-col">
-            {/* Botón de cierre para volver a la parte delantera */}
-            <button
-              onClick={handleFlip} // Vuelve a la tarjeta delantera
-              className="absolute top-2 right-2 w-[30px] h-[30px] flex items-center justify-center bg-bronze rounded-full"
-            >
-              <img
-                className="w-[15px] h-[15px]"
-                src="./src/img/cerrar.png"
-                alt="cerrar"
-              />
-            </button>
-            <div className="flex-1 flex items-center justify-center text-center p-4 text-xs font-raleway text-milk">
-              <div>
-                <p>{name}</p>
-                <p>Fecha: {date}</p>
-                <p>Autor: {author}</p>
-                <p>Corriente: {stream}</p>
-              </div>
-            </div>
-            <div className="flex justify-center gap-2 mb-4">
-              <PrimaryButton>Ver más</PrimaryButton>
-              <SecondaryButton>Eliminar</SecondaryButton>
-            </div>
+        <div className="absolute w-full h-full bg-secondary rounded-xl p-6 flex flex-col items-center justify-between backface-hidden rotate-y-180">
+          <div className="font-raleway text-xs text-white p-4">
+            <p>{name}</p>
+            <p>{date}</p>
+            <p>{autor}</p>
+            <p>{stream}</p>
+          </div>
+
+          <div className="justify-center items-center gap-4 inline-flex">
+            {/* Botón "Volver" para regresar a la parte frontal */}
+            <PrimaryButton onClick={handleFlip}>Volver</PrimaryButton>
+            <SecondaryButton>Eliminar</SecondaryButton>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
