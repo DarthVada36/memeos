@@ -11,13 +11,6 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
 
     return (
         <div className="w-[493px] h-[60px] px-2 bg-milk rounded-[32px] shadow border justify-start items-center gap-1.5 inline-flex">
-            
-            {/* Botón de filtro con ícono de settings */}
-            <button onClick={onFilter} className="p-2.5 justify-start items-center gap-2.5 flex">
-                <div className="w-6 h-6 relative">
-                    <img src="./src/img/setting.png" alt="Filter settings" />
-                </div>
-            </button>
 
             {/* Input de búsqueda */}
             <input
