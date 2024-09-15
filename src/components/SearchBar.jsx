@@ -11,16 +11,16 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
 
     return (
         <div className="w-[493px] h-[60px] px-2 bg-milk rounded-[32px] shadow border justify-start items-center gap-1.5 inline-flex">
-
+    
             {/* Input de búsqueda */}
             <input
                 type="text"
                 value={searchQuery} // Se enlaza el valor con el estado
                 onChange={(e) => setSearchQuery(e.target.value)} // Actualiza el estado al escribir
-                className="grow shrink basis-0 h-[23px] bg-milk outline-none text-secondary font-bodoni placeholder-bronze/50"
+                className="grow shrink basis-0 h-[23px] bg-milk outline-none text-secondary  font-bodoni placeholder-bronze/50 pt-1 pl-[30px] pr-[8px]" // Ajusta el padding aquí
                 placeholder="Buscar..."
             />
-
+    
             {/* Botón de añadir meme con ícono de "plus" */}
             <button
                 onClick={handleAddMeme}
@@ -30,5 +30,7 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
             </button>
         </div>
     );
+    
+    
 }
 

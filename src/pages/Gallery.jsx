@@ -3,6 +3,7 @@ import Card from '../components/Card';
 import SearchBar from '../components/SearchBar';
 import { getMemes } from '../services/services';
 
+
 const Gallery = () => {
   const [memes, setMemes] = useState([]); // Memes originales
   const [filteredMemes, setFilteredMemes] = useState([]); // Memes filtrados
