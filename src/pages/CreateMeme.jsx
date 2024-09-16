@@ -133,7 +133,7 @@ const CreateMeme = () => {
           
           <img
             className="w-[27px] h-[27px]"
-            src="src/img/agregar-archivo.png"
+            src= "https://s3-alpha-sig.figma.com/img/41fd/e56c/1e78eaf6f1d23ea4889a60529030c98a?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JRAMkrUWVihXv4NYcXUZmWK4-o0nkgD~xW7kSeS6lywKBTafVn2VShoBY9jicn3B3ZW1AHpapcv5hQ0J6UgJn5am5UVp1q5hEzStycSpChBvtJLyAJtjA2xRIpPO7JKfLSi4OhpwotMPQ-JCFFP4tMJZK5MqdykZ-Ih~fMSWXf9YRSMLxKfQ3bOJisx~7AczmXXOBbt2YR12e55Og~fMLixgubCeYsCqJl5DXdyYNg9u5rzl9-gLLSgLkTuA5iISdnNEejD1jmqO2HF6pEFyzxYJ4oPRRAVD7fOPiyYRVLMnuWNkpeaw4IHb0fU6-nF0PARexBM9QVQzGCZ6VtQ4yQ__"
           />
           <div className="w-[111px] text-[15px] font-medium font-raleway">
           <input className="w-full" 
@@ -163,3 +163,4 @@ const CreateMeme = () => {
 };
 
 export default CreateMeme;
+
