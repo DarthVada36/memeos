@@ -30,11 +30,12 @@ const CreateMeme = () => {
       navigate('/gallery');
 
     } catch (error) {
-      set.Mensaje("Error creating meme:", error);
+      set.Mensaje("Error creating meme. Please try again. ", error);
     } finally {
       setLoading(false);
     }
   };
+  
   const handleClose = () => {
     navigate('/gallery');  // ruta dnd nos lleva el formulario 
   };
