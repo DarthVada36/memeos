@@ -25,6 +25,7 @@ const CreateMeme = () => {
         author: data.author,
         image: imageUrl
 
+
       });
       navigate('/gallery');
 
@@ -39,16 +40,22 @@ const CreateMeme = () => {
   };
 
   return (
-    <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]" > 
+    <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
     
     {/* Botón de cerrar */}
+    <div>
     <button 
         onClick={handleClose} 
-        className="absolute top-8 right-10 text-[24px] text-primary"
+        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"
+        style={{ 
+          backgroundColor: 'transparent', 
+          border: 'none',
+        }}
       >
-      &times;
-      </button>  
-
+        &times;
+      </button>
+    </div>
+    
      {/* Formulario */}
 
     <form
@@ -68,7 +75,7 @@ const CreateMeme = () => {
         {/* Nombre */}
         <input
           type="text"
-          className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+          className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
           placeholder="Título de meme"
           {...register("name", {
             required: "El campo nombre es requerido",
@@ -81,7 +88,7 @@ const CreateMeme = () => {
         {/* Fecha */}
         <input
           type="date"
-          className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze"
+          className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
           placeholder="Fecha de aparición"
           {...register("dateOfOccurrence", {
             required: "La fecha es requerida",
@@ -94,7 +101,7 @@ const CreateMeme = () => {
         {/* Autor */}
         <input
           type="text"
-          className="w-full bg-milk p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+          className="w-full bg-transparent text-primary p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
           placeholder="Autor"
           {...register("author", {
             required: "El campo autor es requerido",
@@ -105,7 +112,7 @@ const CreateMeme = () => {
 
         {/* Corriente */}
         <input
-          className="w-full bg-milk p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+          className="w-full bg-transparent text-primary p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
           placeholder="Corriente"
           {...register("corriente", {
             required: "El campo corriente es requerido",
@@ -116,7 +123,7 @@ const CreateMeme = () => {
 
         {/* Descripción  */}
         <textarea
-          className="w-full bg-milk h-[124px] p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+          className="w-full bg-transparent text-primary h-[124px] p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
           placeholder="Descripción"
           {...register("descripcion", {
             required: "El campo descripción es requerido",
@@ -144,15 +151,15 @@ const CreateMeme = () => {
       
       {/* Botón enviar */ }
       <button
-        type="submit"
-        className=" w-full mt-6 p-2.5 left-[47.88px] top-[619px]  bg-[#272525] rounded-[20px] justify-center items-center gap-2.5 inline-flex"
-        disabled={loading}
-      >
-        {loading ? 'Enviando...' : 'Añadir meme'}
-        <div className="text-milk text-[15px] font-medium font-bodoni">
-          Enviar
-        </div>
-      </button>
+  type="submit"
+  className="w-full mt-6 p-2.5 bg-[#272525] rounded-[20px] justify-center items-center flex"
+  disabled={loading}
+>
+  <span className="text-milk text-[15px] font-medium font-bodoni">
+    {loading ? 'Enviando...' : 'Enviar'}
+  </span>
+</button>
+
     </form>
     </div>
   );
