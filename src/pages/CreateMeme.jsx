@@ -82,7 +82,7 @@ const CreateMeme = () => {
       
 
         {/* Fecha */}
-        <input
+        <input 
           type="date"
           className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
           placeholder="Fecha de aparición"
