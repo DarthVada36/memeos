@@ -22,7 +22,7 @@ export default function Card({ image, name, date, author, stream, id }) {
               alt={name}
             />
             <div className="h-[45px] flex-col justify-start items-start gap-[18px] flex">
-              <div className="w-64 h-[45px] text-center text-secondary text-lg font-medium font-bodoni">
+              <div className="w-64 h-[45px] text-center text-secondary text-m leading-tight font-medium font-bodoni">
                 {name}
               </div>
             </div>

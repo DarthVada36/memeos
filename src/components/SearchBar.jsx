@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Para la navegación
+import { Link } from 'react-router-dom';
 
 export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
     const navigate = useNavigate(); // Hook para navegar
@@ -22,12 +23,14 @@ export default function SearchBar({ onFilter, searchQuery, setSearchQuery }) {
             />
     
             {/* Botón de añadir meme con ícono de "plus" */}
+            <Link to="/gallery/newmeme">
             <button
                 onClick={handleAddMeme}
-                className="w-[51px] h-[51px] relative flex items-center justify-center bg-bronze rounded-full"
+                className="w-[51px] h-[51px] relative flex items-center justify-center  bg-bronze rounded-full hover:bg-secondary hover:animate-spin"
             >
                 <img className="w-[25.50px] h-[25.50px]" src="./src/img/plus.png" alt="Add meme" />
             </button>
+            </Link>
         </div>
     );
     

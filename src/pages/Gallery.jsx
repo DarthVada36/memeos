@@ -39,11 +39,11 @@ const Gallery = () => {
     };
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-primary">
+    <div className="w-full min-h-screen flex flex-col items-center bg-primary mt-[90px]">
       {/* Contenedor máximo limitado al tamaño de la pantalla */}
       <div className="max-w-[1440px] w-full flex flex-col items-center">
         {/* Título de la Galería */}
-        <div className="w-[194px] h-[45px] text-center text-bronze text-4xl font-bodoni leading-[44.99px] my-6">
+        <div className="w-[194px] h-[45px] text-center text-bronze text-5xl font-bodoni leading-[44.99px] my-6">
           Galería
         </div>
 
