@@ -36,8 +36,8 @@ const Navbar = () => {
               className="text-gray transition-colors duration-300 transform dark:text-gray-200  border-blue-500 mx-1.5 sm:mx-6"
             >
               <img
-                className="h-6 "
-                src="../public/img-perro.svg"
+                className="h-9 "
+                src="https://s3-alpha-sig.figma.com/img/6f70/1b5c/a0262be6cd47d81d3fe318cc1d5fda4d?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eZF66m0mdR4p2cErGdeT9lODhU0rfYoXWcudpnEDrntmFIIcUGHKhtNP58voibOdnDjjMMJfqkhh5Fw7p9CfPF6uZ2JLodP7MgVwQLSbYflEGa10T7Eivq14790eNLd4tk1xrUiKpFCOU3URl8nvyBrSlzwnQ9eRNNEnktkFV2ZYn9GYLMdd6ktG5hsfKOqOQb7Jn0ARCsDgU3T71l1wsijzxJbA7Ly80j9kB6XZfo4-dq7QkNV~JBRZDu94szsMjcFSIHGXo8MrhaUrLYweBPRQIT3siC551nInIYopxuhKSCWBRbHzh-mc1lsgdIG7yMry6wGD0fPQT1TMa09L1w__"
                 alt="Imagen Meme"
               />
             </a>
