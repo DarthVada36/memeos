@@ -62,6 +62,7 @@ const Gallery = () => {
               date={meme.date}
               author={meme.author}
               stream={meme.stream}
+              id={meme.id}
             />
           ))}
         </div>
