@@ -1,11 +1,22 @@
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import { deleteMeme } from '../services/services';
 
 export default function Card({ image, name, date, author, stream }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
+  };
+
+  // Función para manejar la eliminación del meme
+  const handleDelete = async () => {
+    try {
+      await deleteMeme(id); // Llamar a la función de eliminación con el ID
+      onDelete(id); // Llamar a la función que eliminará la tarjeta del estado en el componente padre
+    } catch (error) {
+      console.error('Error eliminando el meme:', error);
+    }
   };
 
   return (
