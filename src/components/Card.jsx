@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import { Link } from 'react-router-dom';
 
-export default function Card({ image, name, date, author, stream }) {
+export default function Card({ image, name, date, author, stream, id }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
+
 
   return (
     <div className="relative w-[300px] h-[420px] perspective-1000">
@@ -20,14 +22,11 @@ export default function Card({ image, name, date, author, stream }) {
               alt={name}
             />
             <div className="h-[45px] flex-col justify-start items-start gap-[18px] flex">
-              <div className="w-64 h-[45px] text-center text-secondary text-lg font-medium font-bodoni">
+              <div className="w-64 h-[45px] text-center text-secondary text-m leading-tight font-medium font-bodoni">
                 {name}
               </div>
             </div>
             <div className="justify-center items-center gap-4 inline-flex">
-              {/* Botón "Editar" */}
-              <button className="bg-milk text-secondary border border-bronze rounded-3xl py-2 px-4 font-bodoni transition duration-300 ease-in-out hover:bg-primary hover:text-milk">Editar</button>
-
               {/* Botón "Detalles" para voltear */}
               <button onClick={handleFlip} className="bg-secondary text-milk rounded-3xl py-2 px-4 font-bodoni transition duration-300 ease-in-out hover:bg-milk hover:text-secondary hover:border hover:border-bronze">Detalles</button>
             </div>
@@ -55,14 +54,13 @@ export default function Card({ image, name, date, author, stream }) {
 
             {/* Botones de "Ver más" y "Eliminar" dentro del mismo borde */}
             <div className="flex justify-center items-center gap-4 mt-4">
+              <Link to = {`/gallery/meme/${id}`}>
               <button
                 className="bg-secondary text-milk border border-bronze rounded-3xl py-2 px-4 font-bodoni transition duration-300 ease-in-out hover:bg-primary hover:text-milk"
               >
                 Ver más
               </button>
-              <button className="bg-primary text-milk rounded-3xl py-2 px-4 font-bodoni transition duration-300 ease-in-out hover:bg-milk hover:text-secondary">
-                Eliminar
-              </button>
+              </Link>
             </div>
           </div>
         </div>
