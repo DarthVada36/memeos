@@ -1,69 +1,76 @@
 {
-  "memes": [
-    {
-      "id": "1",
-      "name": "Como cuando te enteras que hay vida después de la muerte",
-      "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__",
-      "date": "20/20/20",
-      "author": "Pepito Picasso",
-      "stream": "Renacimiento",
-      "description": "Lorem Ipsum gk5qfAqZ8SCXX5DdDuUVmrw16 TNrMQ8PUFt1vQiDFA2Sz28j gBU2lOOt3jGCbp0CSNviBR7hIN dasdksd hsdhagsdhasd hsdhagsdhasd"
-    },
-    {
-      "id": "2",
-      "name": "Otra tarjeta personalizada",
-      "image": "https://s3-alpha-sig.figma.com/img/47c1/69f0/97c8e0968c14856a4ed82276a88b3c09?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lwLg-NVU0Il~dRTzf~iNlbgS0adGIX2~1D~KbuvjC9lX~YqX6wat~tjqtx9esWvsM-ESv4NyPDVm7H76k6g4Zz1WxTcKmf0APQNGLF2RyGD9XM9a2DwRts6ROst8T1QiCtU9VRuCw~N2jglGzxjXJ2PIZHVCpUrwP14segXIXQPn5e67nUfhqlfGOKePsGAJOklmxHCadSyxBWyBsWYs-48AlbNENQD--~tWrflgHlhAxMV6H-H8MsCvJGVPGAt8ccKN~sFaDo-XrRdDMPTRJmlVPW231ECEgVjiGoF1wvwj5RbaerQY9wHKNrBVWXOmT4xIDf95BD6CTa8AlVPkNQ__",
-      "date": "20/20/20",
-      "author": "Pepito Picasso",
-      "stream": "Renacimiento",
-      "description": "Lorem Ipsum gk5qfAqZ8SCXX5DdDuUVmrw16 TNrMQ8PUFt1vQiDFA2Sz28j gBU2lOOt3jGCbp0CSNviBR7hIN dasdksd hsdhagsdhasd hsdhagsdhasd"
-    },
-    {
-      "name": "bea",
-      "dateOfOccurrence": "2024-08-26",
-      "author": "prueba",
-      "corriente": "fff",
-      "descripcion": "jf",
-      "id": "3"
-    },
-    {
-      "id": "4",
-      "name": "Tarjeta con una imagen diferente",
-      "image": "https://s3-alpha-sig.figma.com/img/68f2/b5e0/8fd7a0307ba4edbb2d08c74e4cb8e7b3?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=on-ysVeLEXJ5l6LnaUKRHEbLdJAvPhquheiwkDlGrAAt6hkt0itkKwzyL6tuFA-M16PuvUCOr-qSiHhLy4B0PrjWsojpFSLqCpezXc~g~d5-7yWmCdhOtlcmzhHWiRTprXwwcUcxlj7POe8oZB3fId6TBltTm4G8qy0jYg-BbyqBYl8TPaXJFHlo2a3qAOhV7SGzL0LKaIRApU2rcQldgavxu3y9rn1y~ZjRVSfj1AL02vzUG7rJZgnxoaoEQ7YBKT0OjSy2Y2Pzgu6W3qBwPq3iecewZpRRBdin-7d62nJbclUoRANZxLBsLcfbf75xpK1TSw0gwV~xdzS7rLpngw__",
-      "date": "20/20/20",
-      "author": "Pepito Picasso",
-      "stream": "Renacimiento",
-      "description": "Lorem Ipsum gk5qfAqZ8SCXX5DdDuUVmrw16 TNrMQ8PUFt1vQiDFA2Sz28j gBU2lOOt3jGCbp0CSNviBR7hIN dasdksd hsdhagsdhasd hsdhagsdhasd"
-    },
-    {
-      "id": "9164",
-      "name": "PRUEBAMEME2",
-      "author": " PRUEBA",
-      "image": "https://res.cloudinary.com/duktvnmaw/image/upload/v1726480934/nbguutn0dpulr21hvc0x.png"
-    },
-    {
-      "id": "463a",
-      "name": "PRUEBAMEME3",
-      "author": "PRUEBAMEME3",
-      "image": "https://res.cloudinary.com/duktvnmaw/image/upload/v1726481342/dgxqu08n76ejb5eztj1o.png"
-    },
-    {
-      "id": "2dee",
-      "name": "prueba",
-      "author": "prueba",
-      "image": "https://res.cloudinary.com/duktvnmaw/image/upload/v1726488351/jxo2smzxtmfkcm3wbefv.png"
-    },
-    {
-      "id": "6188",
-      "name": "pk",
-      "author": "pk",
-      "image": "https://res.cloudinary.com/duktvnmaw/image/upload/v1726491420/zayh7x9ivzcxyjbkpzib.png"
-    },
-    {
-      "id": "b501",
-      "name": "prueba01",
-      "author": "prueba01",
-      "image": "https://res.cloudinary.com/duktvnmaw/image/upload/v1726491516/fd0fwhpxkapzfnays5wu.png"
+    "memes": [
+        {
+            "id": "1",
+            "name": "Como cuando te enteras que hay vida después de la muerte",
+            "image": "https://s3-alpha-sig.figma.com/img/609b/3254/57b779c1425087ddd386c38323ff7753?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l96lNn3SH~82V90EDoQ3VCN2stMbx5Gr0-pqUSJBbM95dVYo-yNdOML0GqPM3YiUXBr-7bD6~e8976LeL6i7JRuyuGMyGWWOILX00NQnI9cdq9lRE4y~PxTP75-MhdpNEdSRQSo~uOTBxT4H0qAMdmxbez3EhpU-cXm2rKd-WiAVDC0EMpFBABaMZTQEWjrppoM-OBo~rHQiBMd5qp6cU27F4qaJSp2NVkJg7owyOMmynSF0rAgEBJr1ZmUPS-54gUSbwbt4W1y35i7vY1UcY0wdWzqwZoEcA9~FSFF-eCduTUyhBZp3ikvAFuEslOwsVG0AHIPWBQqMYhuaEYo7ww__",
+            "date": "20/20/20",
+            "author": "John Picasso",
+            "stream": "Renacimiento",
+            "description": "Inspirada en la pintura titulada 'Hombre desconocido', se presenta la figura de un hombre que refleja una mezcla profunda de desconcierto y decepción. La obra capta el momento exacto en que este individuo, tras haber experimentado la muerte, se enfrenta a la inesperada revelación de que la vida continúa más allá del fin terrenal. El hombre, que quizás esperaba encontrar paz o vacío, se ve abrumado por la complejidad de esta nueva realidad. Sus expresiones transmiten no solo asombro, sino también una sensación de desilusión, como si lo que imaginaba que vendría después no correspondiera en absoluto con lo que ha encontrado."
+        },
+        {
+            "id": "2",
+            "name": "Cuando veo lo que publicaba antes en Facebook",
+            "image": "https://s3-alpha-sig.figma.com/img/47c1/69f0/97c8e0968c14856a4ed82276a88b3c09?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lwLg-NVU0Il~dRTzf~iNlbgS0adGIX2~1D~KbuvjC9lX~YqX6wat~tjqtx9esWvsM-ESv4NyPDVm7H76k6g4Zz1WxTcKmf0APQNGLF2RyGD9XM9a2DwRts6ROst8T1QiCtU9VRuCw~N2jglGzxjXJ2PIZHVCpUrwP14segXIXQPn5e67nUfhqlfGOKePsGAJOklmxHCadSyxBWyBsWYs-48AlbNENQD--~tWrflgHlhAxMV6H-H8MsCvJGVPGAt8ccKN~sFaDo-XrRdDMPTRJmlVPW231ECEgVjiGoF1wvwj5RbaerQY9wHKNrBVWXOmT4xIDf95BD6CTa8AlVPkNQ__",
+            "date": "20/09/24",
+            "author": "Emmanuel Donatello",
+            "stream": "Renacimiento",
+            "description": "La crítica de arte, con su característico gesto de superioridad, escudriñaba el lienzo mientras mordisqueaba su labio inferior. Sus ojos, tras las monturas de sus gafas, recorrían la obra con una mirada gélida. Al levantar la cabeza, su ceño fruncido y su expresión de desdén se posaron directamente sobre el pintor, sumido en su trabajo. Un suspiro escapó de sus labios, cargado de una evidente desaprobación."
+        },
+        {
+            "id": "3",
+            "name": "'Te dije que descongelaras el pollo'",
+            "image": "https://s3-alpha-sig.figma.com/img/1cb8/97c5/de717d4d6aebab9b5f1f67cea8bb9b9d?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xae~Abw~RjOrAxOOC0VsK2wxfxIQxscVuOVy5vB1vJZx96Ybn4Wf5S6MAI1YvfxQrSEgjgpjg~zjjf9nzhCm5pDzeAHFFAlr57mX4YYOknYlJkkYrU2-XJ9uqiPt96tHGc4akj5c8lAd6GBJqCByoXjAgbzu2-f5bs-K7NZzNvlc5j-uyBN95FRo7sJQ17df~gk5qfAqZ8SCXX5DdDuUVmrw16TNrMQ8PUFt1vQiDFA2Sz28jgBU2lOOt3jGCbp0CSNviBR7hIN-1ry0beAb1ZlPJo-7OFo~H5RGgEJa1bdoONdT~jqTpgv4-GOCPhZ4EC-a~5wYFgLYaHU66JIG6g__",
+            "date": "01/12/19",
+            "author": "Oury Van Gogh",
+            "stream": "Renacimiento",
+            "description": "En un lienzo bañado por una luz dorada, tres figuras se entrelazan en un drama silencioso. En el centro, un hombre, desnudo y pálido, lucha por liberarse del agarre de dos mujeres vestidas con ricas telas. Sus rostros, marcados por la angustia, suplican clemencia. Una de las mujeres, con una expresión de fría determinación, sujeta un puñal reluciente, mientras la otra lo inmoviliza con una fuerza sorprendente. El fondo, oscuro y nebuloso, acentúa la intensidad del momento. La escena, cargada de tensión sexual y violencia contenida, evoca un mito clásico reinterpretado a través de la sensibilidad renacentista."
+        },
+        {
+            "id": "4",
+            "name": "'A ver tu piercing'",
+            "image": "https://s3-alpha-sig.figma.com/img/68f2/b5e0/8fd7a0307ba4edbb2d08c74e4cb8e7b3?Expires=1727049600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=on-ysVeLEXJ5l6LnaUKRHEbLdJAvPhquheiwkDlGrAAt6hkt0itkKwzyL6tuFA-M16PuvUCOr-qSiHhLy4B0PrjWsojpFSLqCpezXc~g~d5-7yWmCdhOtlcmzhHWiRTprXwwcUcxlj7POe8oZB3fId6TBltTm4G8qy0jYg-BbyqBYl8TPaXJFHlo2a3qAOhV7SGzL0LKaIRApU2rcQldgavxu3y9rn1y~ZjRVSfj1AL02vzUG7rJZgnxoaoEQ7YBKT0OjSy2Y2Pzgu6W3qBwPq3iecewZpRRBdin-7d62nJbclUoRANZxLBsLcfbf75xpK1TSw0gwV~xdzS7rLpngw__",
+            "date": "15/09/23",
+            "author": "Jenny Kahlo",
+            "stream": "Renacimiento",
+            "description": "En un lienzo bañado por una luz tenue, tres hombres protagonizan una escena cargada de tensión. Uno de ellos, con el rostro contorsionado por el dolor, yace en un banco de piedra, una herida sangrante adorna su muslo. Su compañero, con una expresión de curiosidad mezclada con preocupación, se inclina sobre él, introduciendo cautelosamente un dedo en la incisión. El tercer hombre, más alejado, observa la escena con una mezcla de indiferencia y resignación. Sus rostros, esculpidos con la maestría renacentista, revelan una gama de emociones que van desde el sufrimiento hasta la curiosidad, pintando un cuadro de humanidad cruda y vulnerable. El fondo, difuminado y oscuro, acentúa la intensidad del momento, sugiriendo un entorno sombrío y misterioso."
+        },
+        {
+            "id": "5",
+            "name": "'Te mentí. no vamos a ver Netflix'",
+            "image": "https://s3-alpha-sig.figma.com/img/e3f0/3742/4158d9144ed327805d54a1d8fc5910ea?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nOZ5b-9DoxMiNXnIbUnq~bKZEv9NbmDyUyuxr2b4Be3d1zN0SlyjYne0KjacfJSqSt~mmpmQo8FVjFomnca8Rzd~Rn~nL6t53-k1vXXO~NTvAkcdkZFEQTBQ9I~TXr~GCmh68DH3L9xMXn1VmZXVl~IebKSQb1FzbsYRPzARJy1znbhXk37kjvts75lYay~4eZ7QZ7gWlSng-6L~VXPq5xPvSVGmisCBQnfQREtDsT6JrzZ3J4-Ty~FLAsmvu3qq-fZPKLH-qKcx5bc3Yleh~YEDLrRlICqul4sw6glqKT3ZgDb4lAxQeRq2c9fXswxYU-zxJ4K-4nNHyEOmKN7ZsQ__",
+            "date": "19/05/22",
+            "author": "Veida Varo",
+            "stream": "Renacimiento",
+            "description": "En un jardín exuberante, bañado por una luz tenue y misteriosa, Adán y Eva se encuentran al borde de la tentación. Eva, con una mirada intensa y seductora, ofrece a Adán el fruto prohibido. La serpiente, sutilmente insinuada entre las ramas, observa la escena con una sonrisa enigmática. Los rostros de ambos muestran una mezcla de deseo y duda, anticipando las consecuencias de su elección. El fondo, un paisaje idílico pero cargado de una inminente tormenta, refleja la fragilidad de su paraíso. La composición, equilibrada pero tensa, invita al espectador a reflexionar sobre el bien y el mal, la obediencia y la libertad."
+        },
+        {
+            "id": "6",
+            "name": "Cuando intentan herir tus sentimientos, pero ya estás muerto por dentro",
+            "image": "https://s3-alpha-sig.figma.com/img/b5f8/e92e/db334635167f0760e0007233b5c7c5da?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eQLTbsRqxJQvEJW6va95~AZ7v89BgxNTvbrhdm8JWwIalbaxKXVuVxKm-t4Vao0k7niEKZTWOR25zv78cFbEAOpTSOKPGDxY7IuDiZHCMd3L6zXpWeEDQsTiPfSrFwo5YriKPd-VluX~j3c3ewE6iihh-VpbnqoTEG3iYrawdMj2pEIX7QUq-tCt3dLGaZZHFxBGz~yOY1QHVSJy4mgliROCA-MQNuHcupDsLduYeGKuTFhf~wr0GuOeqbL4dDWfztgvdteV0IX4zB6GWwZdwRyif~tcSevOU7u~-DMH~5pJbi-u0BOGlhIg275kUYmjGJF4AVh-rcZq0504JFZmKA__",
+            "date": "19/05/22",
+            "author": "Jenny Kahlo",
+            "stream": "Renacimiento",
+            "description": "En un lienzo bañado por una luz dorada, tres figuras se entrelazan en un drama silencioso. En el centro, un hombre, desnudo y pálido, lucha por liberarse del agarre de dos mujeres vestidas con ricas telas. Sus rostros, marcados por la angustia, suplican clemencia. Una de las mujeres, con una expresión de fría determinación, sujeta un puñal reluciente, mientras la otra lo inmoviliza con una fuerza sorprendente. El fondo, oscuro y nebuloso, acentúa la intensidad del momento. La escena, cargada de tensión sexual y violencia contenida, evoca un mito clásico reinterpretado a través de la sensibilidad renacentista."
+        },
+        {
+            "id": "7",
+            "name": "Cuando mi esposa me deja jugar videojuegos",
+            "image": "https://s3-alpha-sig.figma.com/img/3c9f/1aae/d1bc186a1ab265cc5c0125ca1d5a9cab?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LehfPiM3QoZKZdNytvaNTcrpJpTPF4I8Bba1UjF9af4DonhzuxG2QSWpuvhLBisfIj1RwE~0dnpX35MvMtzNmcKYxT3eWEYyLfpE4ud1XiSDsu2l6OLBXQ6TFCXd3i-wDq90puZxee9X3UtWuH-QCJ~KlHgg7IRHLC6b6acV1AHSAgQYyozIod~xmbPyhep6Em-wlwstS4Fcr8ZWhZ1XOO-40V8nXKL3Jg8iwPOTdoDPg-QekuSZwbFoWeBKG0~TUfheXLyuJmgH0wJNzsTU52wvLS~wj70MA24XksmBAqB73ySVdtbOpjdZaYAB1lAnNpQV0xm16ylnPwz~Moflhw__",
+            "date": "20/09/24",
+            "author": "Oury Van Gogh",
+            "stream": "Renacimiento",
+            "description": "Inspirada en la pintura titulada 'Hombre desconocido', se presenta la figura de un hombre que refleja una mezcla profunda de desconcierto y decepción. La obra capta el momento exacto en que este individuo, tras haber experimentado la muerte, se enfrenta a la inesperada revelación de que la vida continúa más allá del fin terrenal. El hombre, que quizás esperaba encontrar paz o vacío, se ve abrumado por la complejidad de esta nueva realidad. Sus expresiones transmiten no solo asombro, sino también una sensación de desilusión, como si lo que imaginaba que vendría después no correspondiera en absoluto con lo que ha encontrado."
+        },
+        {
+            "id": "8",
+            "name": "Cuando habla el/la que me cae mal:",
+            "image": "https://s3-alpha-sig.figma.com/img/ad46/1902/c00e637c599b5fe0561902ae4c7c1296?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dwrdoSjZqJO~uq7eQU9zTBSnhGWYA7ebtHhzr07ti42kZFJ0Yt5vqLD2vF555LQcq~la0P0GQ0Ab42OtLxt-PKVTEtlyO~XC6MPHk8hvN~bq2TsN39Jrq8ZHTyVxBDMe0yqVFyWC5Qhri01OPWgA83uIhgpHdwekc~yEKJS17KgWFVJbf04C-0yMFh8-f0BuiS55NnRDVEttGvBs6jiQ0XbeiBcPn0SaS69YlKqKPk-3vKole3R0ZAuWgOMpeVf63tempMYwjyrtqsBnsmY0qxkviK~CXq3SNMCKjBY8MdAoPqZW1M39aBM9RHI2gXj2986aFmayiFW-hKI77Ux1cw__",
+            "date": "20/20/20",
+            "author": "John Picasso",
+            "stream": "Renacimiento",
+            "description": "En un jardín exuberante, bañado por una luz tenue y misteriosa, Adán y Eva se encuentran al borde de la tentación. Eva, con una mirada intensa y seductora, ofrece a Adán el fruto prohibido. La serpiente, sutilmente insinuada entre las ramas, observa la escena con una sonrisa enigmática. Los rostros de ambos muestran una mezcla de deseo y duda, anticipando las consecuencias de su elección. El fondo, un paisaje idílico pero cargado de una inminente tormenta, refleja la fragilidad de su paraíso. La composición, equilibrada pero tensa, invita al espectador a reflexionar sobre el bien y el mal, la obediencia y la libertad."
+        }
+        ]
     }
-  ]
-}
