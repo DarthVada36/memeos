@@ -56,7 +56,7 @@ const EditMeme = () => {
           {/* Nombre */}
           <input
             type="text"
-            className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+            className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
             placeholder="Título de meme"
             {...register("name", {
               required: "El campo nombre es requerido",
