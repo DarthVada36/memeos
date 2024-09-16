@@ -41,7 +41,7 @@ const CreateMeme = () => {
   };
 
   return (
-    <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
+    <div className="relative w-[710px] font-raleway h-[700px] my-24 mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
     
     {/* Botón de cerrar */}
   
@@ -129,21 +129,30 @@ const CreateMeme = () => {
         {errors.descripcion && <span>{errors.descripcion.message}</span>}
 
         {/* Subir archivo  */}
-        <div className="w-full p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex">
-          
-          <img
-            className="w-[27px] h-[27px]"
-            src= "https://s3-alpha-sig.figma.com/img/41fd/e56c/1e78eaf6f1d23ea4889a60529030c98a?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JRAMkrUWVihXv4NYcXUZmWK4-o0nkgD~xW7kSeS6lywKBTafVn2VShoBY9jicn3B3ZW1AHpapcv5hQ0J6UgJn5am5UVp1q5hEzStycSpChBvtJLyAJtjA2xRIpPO7JKfLSi4OhpwotMPQ-JCFFP4tMJZK5MqdykZ-Ih~fMSWXf9YRSMLxKfQ3bOJisx~7AczmXXOBbt2YR12e55Og~fMLixgubCeYsCqJl5DXdyYNg9u5rzl9-gLLSgLkTuA5iISdnNEejD1jmqO2HF6pEFyzxYJ4oPRRAVD7fOPiyYRVLMnuWNkpeaw4IHb0fU6-nF0PARexBM9QVQzGCZ6VtQ4yQ__"
+        <div className="w-full p-2.5 flex items-center gap-2.5">
+          {/* El label actúa como el botón de subida */}
+          <label htmlFor="file-upload" className="cursor-pointer flex items-center gap-2">
+            <img
+              className="w-[27px] h-[27px]"
+              src="https://s3-alpha-sig.figma.com/img/41fd/e56c/1e78eaf6f1d23ea4889a60529030c98a?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JRAMkrUWVihXv4NYcXUZmWK4-o0nkgD~xW7kSeS6lywKBTafVn2VShoBY9jicn3B3ZW1AHpapcv5hQ0J6UgJn5am5UVp1q5hEzStycSpChBvtJLyAJtjA2xRIpPO7JKfLSi4OhpwotMPQ-JCFFP4tMJZK5MqdykZ-Ih~fMSWXf9YRSMLxKfQ3bOJisx~7AczmXXOBbt2YR12e55Og~fMLixgubCeYsCqJl5DXdyYNg9u5rzl9-gLLSgLkTuA5iISdnNEejD1jmqO2HF6pEFyzxYJ4oPRRAVD7fOPiyYRVLMnuWNkpeaw4IHb0fU6-nF0PARexBM9QVQzGCZ6VtQ4yQ__"
+              alt="Subir archivo"
+            />
+
+            {/* Placeholder de texto */}
+            <span className="text-[15px] font-medium font-raleway text-secondary">Añadir archivo</span>
+          </label>
+
+          {/* Input file escondido */}
+          <input
+            id="file-upload"
+            type="file"
+            className="hidden"
+            onChange={(e) => setImage(e.target.files[0])}
+            required
           />
-          <div className="w-[111px] text-[15px] font-medium font-raleway">
-          <input className="w-full" 
-          type="file"
-          placeholder="añadir archivo" 
-          onChange={(e) => setImage(e.target.files[0])}
-          required
-           />
-          </div>
         </div>
+
+
       </div>
       
       {/* Botón enviar */ }
