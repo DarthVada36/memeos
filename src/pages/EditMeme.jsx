@@ -38,16 +38,16 @@ const EditMeme = () => {
     <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]">
       
       {/* Botón de cerrar */}
-      <button
-        onClick={handleClose}
-        className="absolute top-8 right-10 text-[24px] text-primary"
+      <button 
+        onClick={handleClose} 
+        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"  
       >
         &times;
       </button>
 
       {/* Formulario */}
       <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col justify-center items-center">
-        <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-['Libre Bodoni'] mt-6 mb-12">
+        <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-bodoni mt-6 mb-12">
           Editar Meme
         </h1>
 
@@ -56,7 +56,7 @@ const EditMeme = () => {
           {/* Nombre */}
           <input
             type="text"
-            className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
+            className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
             placeholder="Título de meme"
             {...register("name", {
               required: "El campo nombre es requerido",
@@ -68,7 +68,7 @@ const EditMeme = () => {
           {/* Fecha */}
           <input
             type="date"
-            className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze"
+            className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Fecha de aparición"
             {...register("dateOfOccurrence", {
               required: "La fecha es requerida",
@@ -79,7 +79,7 @@ const EditMeme = () => {
           {/* Autor */}
           <input
             type="text"
-            className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze"
+            className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Autor"
             {...register("author", {
               required: "El campo autor es requerido",
@@ -90,7 +90,7 @@ const EditMeme = () => {
 
           {/* Corriente */}
           <input
-            className="w-full bg-milk p-2.5 rounded-[10px] border-2 border-bronze"
+            className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Corriente"
             {...register("corriente", {
               required: "El campo corriente es requerido",
@@ -101,7 +101,7 @@ const EditMeme = () => {
 
           {/* Descripción */}
           <textarea
-            className="w-full bg-milk h-[124px] p-2.5 rounded-[10px] border-2 border-bronze"
+            className="w-full bg-transparent text-primary h-[124px] p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Descripción"
             {...register("descripcion", {
               required: "El campo descripción es requerido",
@@ -112,9 +112,9 @@ const EditMeme = () => {
           {/* Botón enviar */}
           <button
             type="submit"
-            className="w-full mt-6 p-2.5 bg-[#272525] rounded-[20px] justify-center items-center gap-2.5 inline-flex"
+            className="w-full mt-6 p-2.5 bg-primary rounded-[20px] justify-center items-center gap-2.5 inline-flex"
           >
-            <div className="text-[#ede7e1] text-[15px] font-medium font-['Libre Bodoni']">
+            <div className="text-milk text-[15px] font-medium font-bodoni">
               Enviar
             </div>
           </button>

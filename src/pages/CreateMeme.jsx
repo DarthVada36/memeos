@@ -13,7 +13,7 @@ const CreateMeme = () => {
 
   const onSubmit = async (data) => {
     setLoading(true);
-    //SetError('');
+    SetError('');
     setMensaje('');
 
     try {
@@ -43,18 +43,14 @@ const CreateMeme = () => {
     <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
     
     {/* Botón de cerrar */}
-    <div>
+  
     <button 
         onClick={handleClose} 
-        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"
-        style={{ 
-          backgroundColor: 'transparent', 
-          border: 'none',
-        }}
+        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"  
       >
         &times;
       </button>
-    </div>
+    
     
      {/* Formulario */}
 
@@ -62,7 +58,7 @@ const CreateMeme = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="w-full flex flex-col justify-center items-center"
     >
-      <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-['Libre Bodoni'] mt-6 mb-12">
+      <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-bodoni mt-6 mb-12">
         Añadir Meme
       </h1>
 
@@ -152,7 +148,7 @@ const CreateMeme = () => {
       {/* Botón enviar */ }
       <button
   type="submit"
-  className="w-full mt-6 p-2.5 bg-[#272525] rounded-[20px] justify-center items-center flex"
+  className="w-full mt-6 p-2.5 bg-primary rounded-[20px] justify-center items-center flex"
   disabled={loading}
 >
   <span className="text-milk text-[15px] font-medium font-bodoni">
