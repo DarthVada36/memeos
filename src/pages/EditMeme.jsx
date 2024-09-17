@@ -31,11 +31,11 @@ const EditMeme = () => {
   };
 
   const handleClose = () => {
-    navigate("/gallery");
+    navigate(`/gallery/meme/${id}`);
   };
 
   return (
-    <div className="relative w-[80%] mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]">
+    <div className="relative w-[710px] h-[700px] my-24 mx-auto font-raleway bg-milk p-10 flex flex-col justify-center items-center rounded-[10px]">
       
       {/* Botón de cerrar */}
       <button 
@@ -47,7 +47,7 @@ const EditMeme = () => {
 
       {/* Formulario */}
       <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col justify-center items-center">
-        <h1 className="text-center w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-bodoni mt-6 mb-12">
+        <h1 className="text-center mt-16 w-full text-secondary text-[28px] sm:text-[36px] md:text-[44px] font-bold font-bodoni mb-12">
           Editar Meme
         </h1>
 
@@ -112,9 +112,9 @@ const EditMeme = () => {
           {/* Botón enviar */}
           <button
             type="submit"
-            className="w-full mt-6 p-2.5 bg-primary rounded-[20px] justify-center items-center gap-2.5 inline-flex"
+            className="w-full mt-2 mb-6 p-2 bg-primary rounded-[20px] justify-center items-center gap-2.5 inline-flex"
           >
-            <div className="text-milk text-[15px] font-medium font-bodoni">
+            <div className="text-milk  text-[15px] font-medium font-bodoni">
               Enviar
             </div>
           </button>

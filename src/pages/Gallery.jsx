@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import SearchBar from '../components/SearchBar';
 import { getMemes } from '../services/services';
+import SpotifyPlayer from '../components/SpotifyPlayer';
 
 
 const Gallery = () => {
@@ -67,6 +68,10 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+
+        <div className="my-6">
+            <SpotifyPlayer />
+        </div>
     </div>
   );
 };
