@@ -63,13 +63,13 @@
       "id": "7"
     },
     {
-      "id": "8",
       "name": "Cuando habla el/la que me cae mal:",
-      "image": "https://s3-alpha-sig.figma.com/img/ad46/1902/c00e637c599b5fe0561902ae4c7c1296?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dwrdoSjZqJO~uq7eQU9zTBSnhGWYA7ebtHhzr07ti42kZFJ0Yt5vqLD2vF555LQcq~la0P0GQ0Ab42OtLxt-PKVTEtlyO~XC6MPHk8hvN~bq2TsN39Jrq8ZHTyVxBDMe0yqVFyWC5Qhri01OPWgA83uIhgpHdwekc~yEKJS17KgWFVJbf04C-0yMFh8-f0BuiS55NnRDVEttGvBs6jiQ0XbeiBcPn0SaS69YlKqKPk-3vKole3R0ZAuWgOMpeVf63tempMYwjyrtqsBnsmY0qxkviK~CXq3SNMCKjBY8MdAoPqZW1M39aBM9RHI2gXj2986aFmayiFW-hKI77Ux1cw__",
-      "date": "20/20/20",
+      "dateOfOccurrence": "2024-08-27",
       "author": "John Picasso",
       "stream": "Renacimiento",
-      "description": "En un jardín exuberante, bañado por una luz tenue y misteriosa, Adán y Eva se encuentran al borde de la tentación. Eva, con una mirada intensa y seductora, ofrece a Adán el fruto prohibido. La serpiente, sutilmente insinuada entre las ramas, observa la escena con una sonrisa enigmática. Los rostros de ambos muestran una mezcla de deseo y duda, anticipando las consecuencias de su elección. El fondo, un paisaje idílico pero cargado de una inminente tormenta, refleja la fragilidad de su paraíso. La composición, equilibrada pero tensa, invita al espectador a reflexionar sobre el bien y el mal, la obediencia y la libertad."
+      "description": "En un jardín exuberante, bañado por una luz tenue y misteriosa, Adán y Eva se encuentran al borde de la tentación. Eva, con una mirada intensa y seductora, ofrece a Adán el fruto prohibido. La serpiente, sutilmente insinuada entre las ramas, observa la escena con una sonrisa enigmática. Los rostros de ambos muestran una mezcla de deseo y duda, anticipando las consecuencias de su elección. El fondo, un paisaje idílico pero cargado de una inminente tormenta, refleja la fragilidad de su paraíso. La composición, equilibrada pero tensa, invita al espectador a reflexionar sobre el bien y el mal, la obediencia y la libertad.",
+      "image": "https://s3-alpha-sig.figma.com/img/ad46/1902/c00e637c599b5fe0561902ae4c7c1296?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dwrdoSjZqJO~uq7eQU9zTBSnhGWYA7ebtHhzr07ti42kZFJ0Yt5vqLD2vF555LQcq~la0P0GQ0Ab42OtLxt-PKVTEtlyO~XC6MPHk8hvN~bq2TsN39Jrq8ZHTyVxBDMe0yqVFyWC5Qhri01OPWgA83uIhgpHdwekc~yEKJS17KgWFVJbf04C-0yMFh8-f0BuiS55NnRDVEttGvBs6jiQ0XbeiBcPn0SaS69YlKqKPk-3vKole3R0ZAuWgOMpeVf63tempMYwjyrtqsBnsmY0qxkviK~CXq3SNMCKjBY8MdAoPqZW1M39aBM9RHI2gXj2986aFmayiFW-hKI77Ux1cw__",
+      "id": "8"
     }
   ]
 }

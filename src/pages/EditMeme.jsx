@@ -20,7 +20,8 @@ const EditMeme = () => {
       setValue("dateOfOccurrence", data.dateOfOccurrence);
       setValue("author", data.author);
       setValue("stream", data.stream);
-      setValue("description", data.description);  
+      setValue("description", data.description); 
+      setValue("image",data.image) 
 
       } catch (error) {
         console.error("Error getting meme: ", error);
@@ -105,7 +106,7 @@ const EditMeme = () => {
               minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
             })}
           />
-          {errors.stream && <span>{errors.corriente.message}</span>}
+          {errors.stream && <span>{errors.stream.message}</span>}
 
           {/* Descripción */}
           <textarea
@@ -115,7 +116,7 @@ const EditMeme = () => {
               required: "El campo descripción es requerido",
             })}
           />
-          {errors.description && <span>{errors.descripcion.message}</span>}
+          {errors.description && <span>{errors.description.message}</span>}
 
           {/* Botón enviar */}
           <button
