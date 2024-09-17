@@ -31,7 +31,7 @@ const EditMeme = () => {
   };
 
   const handleClose = () => {
-    navigate("/gallery");
+    navigate(`/gallery/meme/${id}`);
   };
 
   return (
