@@ -53,7 +53,7 @@ const MemeDetail = () => {
             <div>
               <p>
                 <span className="font-bold">Fecha: </span>
-                {meme.year}
+                {meme.date}
               </p>
               <p>
                 <span className="font-bold">Autor: </span>
