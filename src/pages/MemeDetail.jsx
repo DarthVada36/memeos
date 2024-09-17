@@ -44,7 +44,8 @@ const MemeDetail = () => {
         <CloseBtn />
       </Link>
       <div>
-        <img className="w-[45rem] h-[40rem] border border-bronze" src={meme.image} alt={meme.name} />
+        <img src="/src/img/marcodorado.png" alt="" className='w-[47rem] h-[47rem] relative top-[22rem]'/>
+        <img className="w-[35.5rem] h-[39rem] border border-bronze relative bottom-[21rem] left-[5.5rem]" src={meme.image} alt={meme.name} />
       </div>
       <div className="flex flex-col gap-6">
         <div>
