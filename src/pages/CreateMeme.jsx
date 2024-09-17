@@ -20,7 +20,7 @@ const CreateMeme = () => {
       const imageUrl = await subirImagenCloudinary(image);
       const memeCreado = await createMeme({
         name: data.name,
-        year: data.year,
+        date: data.date,
         description: data.description,
         author: data.author,
         image: imageUrl
@@ -111,7 +111,7 @@ const CreateMeme = () => {
         <input
           className="w-full bg-transparent text-primary p-2.5 left-[47.88px] top-[183.96px] rounded-[10px] border-2 border-bronze justify-start items-center gap-2.5 inline-flex"
           placeholder="Corriente"
-          {...register("current", {
+          {...register("stream", {
             required: "El campo corriente es requerido",
             minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
           })}
