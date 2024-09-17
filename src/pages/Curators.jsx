@@ -9,10 +9,11 @@ const Home = () => {
                 {/* Curador 1 */}
                 <div className="w-[300px] h-[250px] bg-transparent">
 
-                    <img src="../src/img/pngwingom.png" alt="marco" className="bg-transparent" />
-                    <img src="../src/img/doge2.jpg" alt="" className="bg-transparent" />
+                    <img src="../src/img/pngwingom.png" alt="marco" className="bg-transparent absolute w-[280px] h-[320px]" />
+                    <img src="../src/img/doge2.jpg" alt="" className="bg-transparent w-[280px] h-[320px]" />
                     
                 </div>
+                
                 
             </div>
         </div>
