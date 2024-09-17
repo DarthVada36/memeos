@@ -79,7 +79,7 @@ const CreateMeme = () => {
             minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
           })}
         />
-        {errors.nombre && <span>{errors.nombre.message}</span>}
+        {errors.name && <span>{errors.name.message}</span>}
       
 
         {/* Fecha */}
@@ -91,8 +91,8 @@ const CreateMeme = () => {
             required: "La fecha es requerida",
           })}
         />
-        {errors.fechaDeaparición && (
-          <span>{errors.fechaDeaparición.message}</span>
+        {errors.dateOfOccurrence && (
+          <span>{errors.dateOfOccurrence.message}</span>
         )}
 
         {/* Autor */}
@@ -105,7 +105,7 @@ const CreateMeme = () => {
             minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
           })}
         />
-        {errors.autor && <span>{errors.autor.message}</span>}
+        {errors.author && <span>{errors.author.message}</span>}
 
         {/* Corriente */}
         <input
@@ -116,7 +116,7 @@ const CreateMeme = () => {
             minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
           })}
         />
-        {errors.corriente && <span>{errors.corriente.message}</span>}
+        {errors.stream && <span>{errors.stream.message}</span>}
 
         {/* Descripción  */}
         <textarea
@@ -126,7 +126,7 @@ const CreateMeme = () => {
             required: "El campo descripción es requerido",
           })}
         />
-        {errors.descripcion && <span>{errors.descripcion.message}</span>}
+        {errors.description && <span>{errors.descrition.message}</span>}
 
         {/* Subir archivo  */}
         <div className="w-full p-2.5 flex items-center gap-2.5">
