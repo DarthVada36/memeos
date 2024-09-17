@@ -47,7 +47,11 @@ const MemeDetail = () => {
         </div>
         <div className="lg:flex">
           <div className="lg:w-[50%] my-6 lg:border-2 flex justify-center lg:border-gray">
-            <img className="max-w-[350px] lg:w-full" src={meme.image} alt={meme.name} />
+            <img 
+              className="max-w-[350px] lg:max-w-full lg:max-h-[500px] object-contain" 
+              src={meme.image} 
+              alt={meme.name} 
+            />
           </div>
           <div className="w-full lg:ml-6 max-lg:mt-6 max-lg:bg-milk max-lg:rounded-t-3xl max-lg:p-4">
             <div>
