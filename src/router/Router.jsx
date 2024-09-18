@@ -5,37 +5,31 @@ import Gallery from "../pages/Gallery";
 import MemeDetail from "../pages/MemeDetail";
 import CreateMeme from "../pages/CreateMeme";
 import EditMeme from "../pages/EditMeme";
-import Gallery from "../pages/Gallery";
 
 export const router = createBrowserRouter([{
     path: '/',
-    element: <Layout/>,
+    element: <Home />
+},
+{
+    path: 'gallery',
+    element: <Layout />,
     children: [
         {
             index: true, 
-            element: <Home/>
+            element: <Gallery />,
         },
         {
-            path: 'gallery',
-            element: <Gallery/>
+            path: '/gallery/meme/:id',
+            element: <MemeDetail />,
         },
         {
-            path: 'meme/:id',
-            element: <MemeDetail/>
+            path: '/gallery/newmeme',
+            element: <CreateMeme />
         },
         {
-            path: 'newmeme',
-            element: <CreateMeme/>
-        },
-        {
-            path: 'editmeme/:id',
-            element: <EditMeme/>
-        },
-        {
-            path: 'gallery',
-            element: <Gallery/>
-        },
+            path: '/gallery/editmeme/:id',
+            element: <EditMeme />
+        }
     ]
-}])
-
-// export default router
+}
+])

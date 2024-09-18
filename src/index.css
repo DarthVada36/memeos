@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply bg-primary;
+    @apply min-h-screen bg-primary text-milk;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+    scroll-behavior: smooth;
     }
