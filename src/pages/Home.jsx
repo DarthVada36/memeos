@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-const Home = () => {
-  return (
-    <div>
-      <h1 className='text-3xl text-bronze font-bodoni'>Mi vida es un meme</h1>
-      <button>Abrir Galería</button>
-=======
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ReactTyped } from "react-typed";
@@ -22,7 +13,6 @@ const Home = () => {
       </div>
       <h1 className="w-[1200px] h-[120px] text-center text-bronze text-[50px] font-normal font-[bodoni] leading-[79.98px] mt-6">
       <ReactTyped strings={["Bienvenidos",  "Welcome ",  "Bienvenue ", "Benvenuti"]} typeSpeed={100} loop backSpeed={90} /></h1>
->>>>>>> developer
     </div>
   );
 }
