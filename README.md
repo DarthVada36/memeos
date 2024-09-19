@@ -54,7 +54,7 @@ Asegúrate de tener las siguientes herramientas instaladas:
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/tu-usuario/MemeOS.git
+    git clone https://github.com/DarthVada36/memeos.git
     ```
 
 2. Navega al directorio del proyecto:
