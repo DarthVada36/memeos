@@ -6,14 +6,23 @@ import { useForm } from "react-hook-form";
 const EditMeme = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
   const [meme, setMeme] = useState({});
-  const { register, handleSubmit, formState: { errors } } = useForm();
-
+  
   useEffect(() => {
     const fetchMeme = async () => {
       try {
         const data = await getMemeById(id);
         setMeme(data);
+      
+      // Inicializo los valores del formulario con los datos del meme
+      setValue("name", data.name);
+      setValue("dateOfOccurrence", data.dateOfOccurrence);
+      setValue("author", data.author);
+      setValue("stream", data.stream);
+      setValue("description", data.description); 
+      setValue("image",data.image) 
+
       } catch (error) {
         console.error("Error getting meme: ", error);
       }
@@ -70,7 +79,7 @@ const EditMeme = () => {
             type="date"
             className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Fecha de aparición"
-            {...register("dateOfOccurrence", {
+            {...register("date", {
               required: "La fecha es requerida",
             })}
           />
@@ -92,22 +101,22 @@ const EditMeme = () => {
           <input
             className="w-full bg-transparent text-primary p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Corriente"
-            {...register("corriente", {
+            {...register("stream", {
               required: "El campo corriente es requerido",
               minLength: { value: 2, message: "Debe ser mayor a 2 caracteres" },
             })}
           />
-          {errors.corriente && <span>{errors.corriente.message}</span>}
+          {errors.stream && <span>{errors.stream.message}</span>}
 
           {/* Descripción */}
           <textarea
             className="w-full bg-transparent text-primary h-[124px] p-2.5 rounded-[10px] border-2 border-bronze"
             placeholder="Descripción"
-            {...register("descripcion", {
+            {...register("description", {
               required: "El campo descripción es requerido",
             })}
           />
-          {errors.descripcion && <span>{errors.descripcion.message}</span>}
+          {errors.description && <span>{errors.description.message}</span>}
 
           {/* Botón enviar */}
           <button
