@@ -41,7 +41,7 @@ const CreateMeme = () => {
   };
 
   return (
-    <div className="relative w-[710px] font-raleway h-[700px] my-24 mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
+    <div className="relative lg:w-[710px] font-raleway h-[700px] my-24 mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
     
     {/* Botón de cerrar */}
   
