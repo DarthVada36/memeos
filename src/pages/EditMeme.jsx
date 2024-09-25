@@ -22,6 +22,7 @@ const EditMeme = () => {
       setValue("stream", data.stream);
       setValue("description", data.description); 
       setValue("image",data.image) 
+      setValue("date",data.date) 
 
       } catch (error) {
         console.error("Error getting meme: ", error);

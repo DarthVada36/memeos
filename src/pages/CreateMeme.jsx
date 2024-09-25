@@ -21,7 +21,7 @@ const CreateMeme = () => {
 
   const onSubmit = async (data) => {
     setLoading(true);
-    SetError("");
+    setError("");
     setMensaje("");
 
     try {
@@ -35,7 +35,7 @@ const CreateMeme = () => {
       });
       navigate("/gallery");
     } catch (error) {
-      set.Mensaje("Error creating meme. Please try again. ", error);
+      setError.Mensaje("Error creating meme. Please try again. ", error);
     } finally {
       setLoading(false);
     }
@@ -46,13 +46,12 @@ const CreateMeme = () => {
   };
 
   return (
-    <div className="relative lg:w-[710px] font-raleway h-[700px] my-24 mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20" > 
-    
-    {/* Botón de cerrar */}
-  
-    <button 
-        onClick={handleClose} 
-        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"  
+    <div className="relative lg:w-[710px] font-raleway h-[700px] my-24 mx-auto bg-milk p-10 flex flex-col justify-center items-center rounded-[10px] top-20">
+      {/* Botón de cerrar */}
+
+      <button
+        onClick={handleClose}
+        className="absolute top-2 right-10 text-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl hover:text-secondary cursor-pointer transition-all duration-300"
       >
         &times;
       </button>
